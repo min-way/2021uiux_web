@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+.wrap { width: 1200px; margin: 0 auto;}
+
+/*header*/
+#header {}
+.top { background: #0044af; width: 100%;}
+
+.topMenu {float: left; }
+.topMenu li { float: left; background: #00163b; margin: 0 1px; }
+.topMenu li a { display: block; line-height: 40px; padding: 0 30px; color: #fff; font-weight: bold; text-align: center;}
+
+.sideMenu {float: right;}
+.sideMenu li { float: left;}
+.sideMenu > li > a { display: block; line-height: 40px; padding: 0 10px; color: #fff; font-size: 12px; text-align: center;}
+
+.sideMenu > li > ul { line-height: 40px;}
+
+.logo { float: left; }
+.mainMenu {float: right; width: 750px;}
+.mainMenu ul li {float: left; }
+.mainMenu ul:first-child li a { font-size: 18px; line-height: 120px; padding-right: 25px;}
+
+.mainMenu ul:last-child { float: left; line-height: 150px; padding-left: 25px;}
+
+/*contents*/
+#contents {}
+
+/*footer*/
+#footer {}

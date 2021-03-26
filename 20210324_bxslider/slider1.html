@@ -44,7 +44,16 @@
         .container li img { width: 100%;}
         
 /*        gallery*/
-        #section1st ul li { float: left; width: calc((1000px - 60px) / 4);}
+        #section1st ul li { 
+            position: relative;
+            float: left;
+            width: calc((1000px - 60px) / 4);
+            height: 235px;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        
         #section1st ul li + li { margin-left: 20px;}
         #section1st h2,
         #section1st p {
@@ -60,25 +69,83 @@
             margin: 10px auto;
         }
         
-        #section2st p {margin-bottom: 20px;}
-        #section2st ul li { float: left; width: calc((1000px - 60px) / 4);}
-        #section2st ul li + li { margin-left: 20px;}
-        #section2st h2,
-        #section2st p { text-align: center;}
-        
-        #section2st p {margin-bottom: 20px;}
-        #section2st h2:after {
-            content: '';
-            width: 80px;
-            display: block;
-            height: 2px;
-            background: #000;
-            margin: 10px auto;
+        #section1st .overlay {
+            background: rgba(97, 164, 255, 0.5);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 100%;
+            transition: 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
         
+        #section1st li:hover .overlay {
+            top: 0;
+        }
         
+        #section1st .overlay2 {
+            background: skyblue;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            transition: 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        #section1st li:hover .overlay2 {
+            top: 0;
+            left: 0;
+        }
+        
+        #section1st .overlay3 {
+            background: skyblue;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: -100%;
+            left: %;
+            opacity: 1;
+            transition: 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        #section1st li:hover .overlay3 {
+            top: 0;
+            left: 0;
+        }
+        
+        #section1st .overlay4 {
+            background: skyblue;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            transition: 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        #section1st li:hover .overlay4 {
+            top: 0;
+            left: 0;            
+        }
         
         .gray { background: #eee;}
+        
         
 /*        common*/
         .mb30 { margin-bottom: 30px !important;}
@@ -115,26 +182,30 @@
          </div>
      </div>
      <div class="gray pb30 pt30">
-         <section class="container" id="section1st">
+         <section class="container mb30" id="section1st">
              <h2>Gallery</h2>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, aliquid.</p>
+             <p class="mb30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, aliquid.</p>
              <ul class="clearfix">
-                 <li><img src="../images/testimg.jpg" alt=""></li>
-                 <li><img src="../images/testimg.jpg" alt=""></li>
-                 <li><img src="../images/testimg.jpg" alt=""></li>
-                 <li><img src="../images/testimg.jpg" alt=""></li>
+                 <li>
+                     <img src="../images/testimg.jpg" alt="">
+                     <div class="overlay">TOP</div>
+                 </li>
+                 <li>
+                     <img src="../images/testimg.jpg" alt="">
+                     <div class="overlay2">TOP</div>
+                 </li>
+                 <li>
+                     <img src="../images/testimg.jpg" alt="">
+                     <div class="overlay3">TOP</div>
+                 </li>
+                 <li>
+                     <img src="../images/testimg.jpg" alt="">
+                     <div class="overlay4">TOP</div>
+                 </li>
+                 
              </ul>
          </section>
      </div>
-     <section class="container" id="section2st">
-         <h2>Gallery</h2>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, aliquid.</p>
-         <ul class="clearfix">
-             <li><img src="../images/testimg.jpg" alt=""></li>
-             <li><img src="../images/testimg.jpg" alt=""></li>
-             <li><img src="../images/testimg.jpg" alt=""></li>
-             <li><img src="../images/testimg.jpg" alt=""></li>
-         </ul>
-     </section>
+    
 </body>
 </html>
