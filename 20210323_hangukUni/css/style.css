@@ -6,22 +6,25 @@
 #header {}
 .top { background: #0044af; width: 100%;}
 
-.topMenu {float: left; }
+.topMenu { float: left; }
 .topMenu li { float: left; background: #00163b; margin: 0 1px; }
 .topMenu li a { display: block; line-height: 40px; padding: 0 30px; color: #fff; font-weight: bold; text-align: center;}
 
 .sideMenu {float: right;}
 .sideMenu li { float: left;}
-.sideMenu > li > a { display: block; line-height: 40px; padding: 0 10px; color: #fff; font-size: 12px; text-align: center;}
-
+.sideMenu > li > a { display: block; line-height: 40px; color: #fff; font-size: 12px; text-align: center;}
+.sideMenu > li + li { padding-left: 10px;}
 .sideMenu > li > ul { line-height: 40px;}
 
-.logo { float: left; }
-.mainMenu {float: right; width: 750px;}
-.mainMenu ul li {float: left; }
-.mainMenu ul:first-child li a { font-size: 18px; line-height: 120px; padding-right: 25px;}
+.logo { float: left; width: 300px;}
 
-.mainMenu ul:last-child { float: left; line-height: 150px; padding-left: 25px;}
+.logo img, h1, p {display: inline;}
+.mainMenu { float: right;}
+.mainMenu ul { display: inline;}
+.mainMenu ul li { float: left;}
+.mainMenu ul li a { font-size: 18px; color: #666; font-weight: bold;}
+.mainMenu ul:first-child li { padding-right: 40px; line-height: 120px;}
+.mainMenu ul:last-child li { line-height: 150px}
 
 /*contents*/
 #contents {}
