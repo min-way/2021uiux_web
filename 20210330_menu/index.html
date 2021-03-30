@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/jquery.bxslider.js"></script>
+    <style>
+        .Wrap {background: skyblue;}
+        .gnb {width: 1200px; margin: 0 auto; height: 40px; position: relative; z-index: 1;}
+        .gnb>ul>li {float: left; width: calc(100% / 5); background: skyblue;}
+        .gnb>ul>li:hover {background: #5684ff; } /*아래로 bg 전염*/
+        .gnb>ul>li>a {display: block; line-height: 40px; text-align: center;}
+        .gnb>ul>li:hover a {color: #fff;} /*li에서 hover 하므로 a까지 전염*/
+        
+        .gnb>ul>li:hover .submenu {display: block;} 
+/*        .gnb>ul:hover .submenu {display: block;}li와ul submenu 보여지는 차이*/
+        
+        .submenu {.display: none; position: absolute; }
+        
+        .gnb .submenu li {}
+        .gnb .submenu li:hover {background: #352ee3;}
+        .gnb .submenu li a {display: block; line-height: 40px; text-align: center; left: 50px;}
+            
+        .visual {}
+        .slider {}
+        .slider img {width: 100%;}
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".slider").bxSlider({
+                auto:true
+            });
+        });
+    </script>
+    
+    
+</head>
+<body>
+    <div class="Wrap">
+        <nav class="gnb">
+            <ul class="clearfix">
+                <li><a href="#">MENU1</a>
+                    <ul class="submenu">
+                        <li><a href="#">Submenu1_1</a></li>
+                        <li><a href="#">Submenu1_2</a></li>
+                        <li><a href="#">Submenu1_3</a></li>
+                        <li><a href="#">Submenu1_4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MENU2</a>
+                    <ul class="submenu">
+                        <li><a href="#">Submenu2_1</a></li>
+                        <li><a href="#">Submenu2_2</a></li>
+                        <li><a href="#">Submenu2_3</a></li>
+                        <li><a href="#">Submenu2_4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MENU3</a>
+                    <ul class="submenu">
+                        <li><a href="#">Submenu3_1</a></li>
+                        <li><a href="#">Submenu3_2</a></li>
+                        <li><a href="#">Submenu3_3</a></li>
+                        <li><a href="#">Submenu3_4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MENU4</a>
+                    <ul class="submenu">
+                        <li><a href="#">Submenu4_1</a></li>
+                        <li><a href="#">Submenu4_2</a></li>
+                        <li><a href="#">Submenu4_3</a></li>
+                        <li><a href="#">Submenu4_4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MENU5</a>
+                    <ul class="submenu">
+                        <li><a href="#">Submenu5_1</a></li>
+                        <li><a href="#">Submenu5_2</a></li>
+                        <li><a href="#">Submenu5_3</a></li>
+                        <li><a href="#">Submenu5_4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="visual">
+        <ul class="slider">
+            <li><img src="../images/images01.jpg" alt=""></li>
+            <li><img src="../images/images02.jpg" alt=""></li>
+            <li><img src="../images/images03.jpg" alt=""></li>
+            <li><img src="../images/images04.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>
