@@ -10,7 +10,7 @@
     <style>
         .Wrap {background: skyblue;}
         .gnb {width: 1200px; margin: 0 auto; height: 40px; position: relative; z-index: 1;}
-        .gnb>ul>li {float: left; width: calc(100% / 5); background: skyblue;}
+        .gnb>ul>li {float: left; width: calc(100% / 5); background: skyblue; position: relative;}
         .gnb>ul>li:hover {background: #5684ff; } /*아래로 bg 전염*/
         .gnb>ul>li>a {display: block; line-height: 40px; text-align: center;}
         .gnb>ul>li:hover a {color: #fff;} /*li에서 hover 하므로 a까지 전염*/
@@ -18,11 +18,11 @@
         .gnb>ul>li:hover .submenu {display: block;}
 /*        .gnb>ul:hover .submenu {display: block;}li와ul submenu 보여지는 차이*/
 
-        .submenu {.display: none; position: absolute; }
+        .submenu {display: none; position: absolute; width: 100%; background: #5684ff;}
 
-        .gnb .submenu li {}
+        .gnb .submenu li {text-align: center;}
         .gnb .submenu li:hover {background: #352ee3;}
-        .gnb .submenu li a {display: block; line-height: 40px; text-align: center; left: 50px;}
+        .gnb .submenu li a {display: block; line-height: 40px;}
 
         .visual {}
         .slider {}
