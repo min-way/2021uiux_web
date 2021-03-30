@@ -1,0 +1,18 @@
+1. atom-beautify
+2. autoclose-html
+3. minimap
+4. emmet
+C:\Users\hanyo\.atom\packages\emmet\node_modules\emmet\lib\snippets.json
+
+5. highlight-selected
+6. remote-ftp
+7. color-picker
+
+8. open-in-browser
+keymaps>open-in-browsers.cson
+'atom-workspace':
+  'f12': 'open-in-browsers:toggle'
+
+9.atom-live-server
+keymaps>atom-live-server.cson
+
