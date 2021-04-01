@@ -1,27 +1,29 @@
 @charset "utf-8";
 
+body {min-width: 1200px;}
 .wrap { width: 1200px; margin: 0 auto;}
 
 /*------------header------------*/
-#header {}
 .top { background: #0044af; width: 100%;}
 
 .topMenu { float: left; }
 .topMenu li { float: left; background: #00163b; margin: 0 1px; }
 .topMenu li a { display: block; line-height: 40px; padding: 0 30px; color: #fff; font-weight: bold; text-align: center;}
+.topMenu li:first-child a {color: #666; background: #fff;}
 
 .sideMenu {float: right;}
 .sideMenu li { float: left;}
 .sideMenu > li > p { line-height: 40px; color: #fff; font-size: 12px; text-align: center;}
 .sideMenu > li > a { display: block; line-height: 40px; color: #fff; font-size: 12px; text-align: center;}
 .sideMenu > li + li { padding-left: 10px;}
-.sideMenu > li > ul { padding-top: 9px;}
+.sideMenu > li > ul { padding-top: 10.5px;}
 
 .logo { float: left; width: 300px; margin-top: 25px; }
-.logo img { float: left; padding-right: 15px; width: 27%;}
-.logo h2 { letter-spacing: 5px;}
-.logo h2:after { content: ''; display: block; width: 150px; height: 1px; background: #000; margin: 5px 0; overflow: hidden;}
-.logo p { font-size: 14px;}
+.logo img { float: left; padding-right: 15px; width: 80px;}
+.logo h2 { letter-spacing: 5px; color: #999;}
+.logo h2:after { content: ''; display: block; width: 150px; height: 2px; background: #999; margin: 5px 0; overflow: hidden;}
+.logo p { font-size: 14px; color: #999;}
+
 .mainMenu { float: right; }
 .mainMenu ul { float: left;}
 .mainMenu ul li { float: left; }
@@ -48,13 +50,12 @@
 .btnTop img {border: 1px solid #fff; padding: 10px;
 border-radius: 50%;}
 
-
 .txtSlider {position: absolute; left: 95px; top: 80px;}
 .txtSlider p {font-size: 70px; color: #1550b8; line-height: 75px; letter-spacing: -5px}
 
 .twb { font-weight: bold;}
-.btn { display: block; border: 1px solid #999; width: 170px; line-height: 40px; text-align: center; background: rgba(0,0,0,0.5); color: #fff; font-size: 15px;}
-.btn2 { display: block; border: 1px solid #0b1f41; width: 170px; line-height: 40px; text-align: center; background: #192d4e; color: #fff; font-size: 15px;}
+.btn { display: block; border: 1px solid #999; width: 180px; line-height: 40px; text-align: center; background: rgba(0,0,0,0.5); color: #fff; font-size: 15px;}
+.btn2 { display: block; border: 1px solid #0b1f41; width: 180px; line-height: 40px; text-align: center; background: #192d4e; color: #fff; font-size: 15px;}
 
 .container { position: relative;}
 .container > ul > li { float: left; width: 25%; height: 225px; background: #555;}
@@ -73,7 +74,7 @@ border-radius: 50%;}
 .container > ul > li:nth-child(4) .notice { position: relative; margin-bottom: 10px;}
 .container > ul > li:nth-child(4) h4 { color: #fff; font-size: 24px; font-weight: bold;}
 .container > ul > li:nth-child(4) h4:after { content: ''; width: 255px; height: 3px; background: #fff; display: block; margin: 15px 0;}
-.container > ul > li:nth-child(4) p { padding-left: 15px; background: url(../images/notice_list.png) no-repeat 0 50%; color: #fff; font-size: 13px;}
+.container > ul > li:nth-child(4) p { padding-left: 12px; background: url(../images/notice_list.png) no-repeat 0 55%; color: #fff; font-size: 13px; letter-spacing: -0.5px;}
 .container > ul > li:nth-child(4) span {position: absolute; right: 10px; top: 0; color: #fff; font-size: 13px;}
 .container > ul > li:nth-child(5) { padding: 30px 20px; background: #fff;}
 .container > ul > li:nth-child(5) h4 { color: #00163b; font-size: 24px; font-weight: bold; margin-bottom: 15px;}
@@ -82,19 +83,32 @@ border-radius: 50%;}
 .container > ul > li:nth-child(5) .sns_icon {float: right;}
 .container > ul > li:nth-child(5) .sns_icon li {float: left;}
 .container > ul > li:nth-child(5) .sns_icon li + li {margin-left: 5px;}
-
 .container > ul > li:nth-child(6) {background: url(../images/campus.jpg) no-repeat -140px -50px; }
 .container > ul > li:nth-child(6) {position: relative;}
-.container > ul > li:nth-child(6) .btn3 {position: absolute; color: #fff; width: 100%; display: block; background: rgba(0,0,0,0.7); text-align: center; line-height: 50px; font-size: 19px; bottom: 0;}
-
+.container > ul > li:nth-child(6) .cc_overlay {position: absolute; color: #fff; text-align: center; line-height: 50px; font-size: 19px; background: rgba(0,0,0,0.7); width: 100%; font-weight: bold; height: 100%; top: 75%; transition: 0.5s;}
+.container > ul > li:nth-child(6) .cc_overlay:hover {top: 0; line-height: 225px;}
 .container > ul > li:nth-child(7) {background: url(../images/video_img.jpg) no-repeat; position: relative;}
 .container > ul > li:nth-child(7) img {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 50%; opacity: 0.7;}
 .container > ul > li:nth-child(8) { position: relative; width: 75%; }
-.container > ul > li:nth-child(8) .txtBanner {position: absolute; z-index: 1; padding: 30px;}
+.container > ul > li:nth-child(8) .txtBanner {position: absolute; padding: 30px;}
 .container > ul > li:nth-child(8) p {color: #ff503d; font-size: 30px; margin-bottom: -15px;}
 .container > ul > li:nth-child(8) h4 {color: #ff503d; font-weight: bold; font-size: 60px; letter-spacing: -4px; margin-bottom: 10px;}
-.container > ul > li:nth-child(8) .btn4 {display: block; border: 1px solid #bebebe; width: 170px; line-height: 40px; text-align: center; background: rgba(212, 12, 12, 0.71); color: #fff; font-size: 14px;}
+.container > ul > li:nth-child(8) .btn4 {display: block; border: 1px solid #bebebe; width: 180px; line-height: 40px; text-align: center; background: rgba(212, 12, 12, 0.71); color: #fff; font-size: 14px;}
+.container > ul > li:nth-child(8) .bx-pager {
+    top: 10px;
+    right: 30px;
+    width: 120px;
+    height: 40px;
+}
+.container > ul > li:nth-child(8) .bx-wrapper .bx-pager.bx-default-pager a:hover, .container > ul > li:nth-child(8) .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #ff503d;
+}
 
+.container > ul > li:nth-child(8) .bx-wrapper .bx-pager.bx-default-pager a {
+    width: 15px;
+    height: 15px;
+    margin: 0 7px;
+}
 
 /*---------slide---------*/
 .bx-wrapper {
@@ -106,7 +120,6 @@ border-radius: 50%;}
 }
 
 .bx-wrapper .bx-pager {
-    position: absolute;
     bottom: 30px;
     width: 100%;
 }
@@ -129,28 +142,35 @@ border-radius: 50%;}
 }
 
 .bx-wrapper .bx-controls-direction a {
-    position: absolute;
-    top: 50%;
-    margin-top: -16px;
-    outline: 0;
     width: 55px;
     height: 70px;
-    text-indent: -9999px;
-    z-index: 9999;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    width: 15px;
+    height: 15px;
+    margin: 0 7px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #1651b7;
 }
 
 /*------------footer------------*/
-#footer { width: 100%; height: 165px; position: relative;}
-.ftWrap { width: 700px; margin: 0 auto;}
-#footer ul li {float: left;}
-#footer ul li a:after { content: ''; width: 1px; height: 10px; background: #000; position: absolute; top: 15px; margin-left: 10px;}
-#footer ul li:last-child a:after { display: none;}
-#footer ul li + li { margin-left: 25px;}
-#footer ul li a {display: block; line-height: 40px; font-size: 14px; color: #222;}
-#footer ul + p {font-size: 14px; color: #777; line-height: 25px; letter-spacing: -2px}
-#footer p + p {font-size: 14px; color: #777; line-height: 30px;}
-
-
-
-
-
+#footer { position: relative; }
+.ftLogo { float: left; width: 300px; padding-top: 35px;}
+.ftLogo img { float: left; padding-right: 15px; width: 80px;}
+.ftLogo h2 { letter-spacing: 5px; color: #999;}
+.ftLogo h2:after { content: ''; display: block; width: 150px; height: 2px; background: #999; margin: 5px 0; overflow: hidden;}
+.ftLogo p { font-size: 14px; color: #999;}
+.ftWrap { float: left; width: 700px;}
+.ftWrap ul li {float: left;}
+.ftWrap ul li a:after { content: ''; width: 1px; height: 10px; background: #000; position: absolute; top: 15px; margin-left: 10px;}
+.ftWrap ul li:last-child a:after { display: none;}
+.ftWrap ul li + li { margin-left: 25px;}
+.ftWrap ul li a {display: block; line-height: 40px; font-size: 14px; color: #222;}
+.ftWrap ul + p {font-size: 14px; color: #777; line-height: 25px; letter-spacing: -2px}
+.ftWrap p + p {font-size: 14px; color: #777; line-height: 30px;}

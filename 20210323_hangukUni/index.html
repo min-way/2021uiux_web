@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>한국대학교</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/common.css">
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    
     <script>
         $(document).ready(function(){
             $(".slider").bxSlider({
@@ -17,6 +20,11 @@
             $(".slider2").bxSlider({
                 auto:true,
                 controls:false
+            });
+            $(".youtube").colorbox({
+                iframe:true,
+                innerWidth:700,
+                innerHeight:393.75
             });
         });
         
@@ -89,15 +97,36 @@
                     <li>
                         <div class="sliderWrap">
                             <ul class="slider">
-                                <li><img src="images/main_slide01.png" alt=""></li>
-                                <li><img src="images/main_slide01.png" alt=""></li>
-                                <li><img src="images/main_slide01.png" alt=""></li>
-                                <li><img src="images/main_slide01.png" alt=""></li>
+                                <li>
+                                    <img src="images/main_slide01.png" alt="main1">
+                                    <div class="txtSlider">
+                                        <p class="mb20"><span class="twb">한국</span>에서<br><span class="twb">시작</span>하는<br>새로운 <span class="twb">꿈</span><br></p>
+                                        <a href="#" class="btn2">자세히보기 &#9654;</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/main_slide01.png" alt="main1">
+                                    <div class="txtSlider">
+                                        <p class="mb20"><span class="twb">한국</span>에서<br><span class="twb">시작</span>하는<br>새로운 <span class="twb">꿈</span><br></p>
+                                        <a href="#" class="btn2">자세히보기 &#9654;</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/main_slide01.png" alt="main1">
+                                    <div class="txtSlider">
+                                        <p class="mb20"><span class="twb">한국</span>에서<br><span class="twb">시작</span>하는<br>새로운 <span class="twb">꿈</span><br></p>
+                                        <a href="#" class="btn2">자세히보기 &#9654;</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/main_slide01.png" alt="main1">
+                                    <div class="txtSlider">
+                                        <p class="mb20"><span class="twb">한국</span>에서<br><span class="twb">시작</span>하는<br>새로운 <span class="twb">꿈</span><br></p>
+                                        <a href="#" class="btn2">자세히보기 &#9654;</a>
+                                    </div>
+                                </li>
                             </ul>
-                            <div class="txtSlider">
-                                <p class="mb20"><span class="twb">한국</span>에서<br><span class="twb">시작</span>하는<br>새로운 <span class="twb">꿈</span><br></p>
-                                <a href="#" class="btn2">자세히보기 &#9654;</a>
-                            </div>
+                            
                         </div>
                     </li><!----75%---->
                     <li>
@@ -126,15 +155,15 @@
                             <span>2016-06-12</span>
                         </div>
                         <div class="notice">
-                            <p>&#91;공지&#93; 한국대학교 웹진 ...</p>
+                            <p>&#91;보도&#93; 우수대학교 선정 수상</p>
                             <span>2016-06-12</span>
                         </div>
                         <div class="notice">
-                            <p>&#91;공지&#93; 한국대학교 웹진 ...</p>
+                            <p>&#91;공지&#93; 대학입시 설명회</p>
                             <span>2016-06-12</span>
                         </div>
                         <div class="notice">
-                            <p>&#91;공지&#93; 한국대학교 웹진 ...</p>
+                            <p>&#91;공지&#93; 2016년 1학기 성적 ...</p>
                             <span>2016-06-12</span>
                         </div>
                     </li>
@@ -152,23 +181,48 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="btn3">캠퍼스 투어</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="images/video_btn.png" alt=""></a>
-                    </li>
-                    <li>
-                        <div class="txtBanner">
-                           <p>2017년 신&#183;편입생 2차 모집</p>
-                            <h4>2017.7.1 &#126; 7.10</h4>
-                            <a href="#" class="btn4">입학사전예약 &#9654;</a>
-                        </div>
+                        <a href="#" class="cc_overlay">캠퍼스 투어</a>
                         
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/embed/-LRVUFM4yAY" class="youtube" title="캠퍼스 전경"><img src="images/video_btn.png" alt="video"></a>
+                        
+                    </li>
+                    <li>
                         <div class="slider2Wrap">
                             <ul class="slider2">
-                                <li><img src="images/banner.png" alt=""></li>
-                                <li><img src="images/banner.png" alt=""></li>
-                                <li><img src="images/banner.png" alt=""></li>
+                                <li>
+                                    <div class="txtBanner">
+                                       <p>2017년 신&#183;편입생 2차 모집</p>
+                                        <h4>2017.7.1 &#126; 7.10</h4>
+                                        <a href="#" class="btn4">입학사전예약 &#9654;</a>
+                                    </div>
+                                    <img src="images/banner.png" alt="banner">
+                                </li>
+                                <li>
+                                    <div class="txtBanner">
+                                       <p>2017년 신&#183;편입생 2차 모집</p>
+                                        <h4>2017.7.1 &#126; 7.10</h4>
+                                        <a href="#" class="btn4">입학사전예약 &#9654;</a>
+                                    </div>
+                                    <img src="images/banner.png" alt="banner">
+                                </li>
+                                <li>
+                                    <div class="txtBanner">
+                                       <p>2017년 신&#183;편입생 2차 모집</p>
+                                        <h4>2017.7.1 &#126; 7.10</h4>
+                                        <a href="#" class="btn4">입학사전예약 &#9654;</a>
+                                    </div>
+                                    <img src="images/banner.png" alt="banner">
+                                </li>
+                                <li>
+                                    <div class="txtBanner">
+                                       <p>2017년 신&#183;편입생 2차 모집</p>
+                                        <h4>2017.7.1 &#126; 7.10</h4>
+                                        <a href="#" class="btn4">입학사전예약 &#9654;</a>
+                                    </div>
+                                    <img src="images/banner.png" alt="banner">
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -177,18 +231,25 @@
         </div>
     </section>
     <footer id="footer">
-        <div class="ftWrap">
-            <ul>
-                <li><a href="#">회사소개</a></li>
-                <li><a href="#">한국대학교</a></li>
-                <li><a href="#">개인정보취급방침</a></li>
-                <li><a href="#">이용정책</a></li>
-                <li><a href="#">입점&#47;제휴문의 및 광고</a></li>
-                <li><a href="#">이메일 무단수집거부</a></li>
-            </ul>
-            <p>대표자 : 홍길동 서울특별시 구로구 구로로 300(구로동 6가)  사업자등록번호 : 123-56-7890234<br>통신판매업 신고번호 : 제 1234-서울 구로구-1004호 개인정보관리 책임자 : 홍길동  소비자피해보상보험<br>고객센터 : 1234-5678 FAX : 02-1234-5678 HNAGUKUNIVERSITY&#64;HANGUK.COM</p>
-            <p>COPYRIGHT &#169; HANGUK. ALL RIGHTS RESERVED.</p>
-        </div>
+       <div class="wrap">
+           <div class="ftLogo">
+               <img src="images/logo.png" alt="">
+               <h2>한국대학교</h2>
+               <p>HANGUK UNIVERSITY</p>
+           </div>
+           <div class="ftWrap">
+               <ul>
+                   <li><a href="#">회사소개</a></li>
+                   <li><a href="#">한국대학교</a></li>
+                   <li><a href="#">개인정보취급방침</a></li>
+                   <li><a href="#">이용정책</a></li>
+                   <li><a href="#">입점&#47;제휴문의 및 광고</a></li>
+                   <li><a href="#">이메일 무단수집거부</a></li>
+               </ul>
+               <p>대표자 : 홍길동 서울특별시 구로구 구로로 300(구로동 6가)  사업자등록번호 : 123-56-7890234<br>통신판매업 신고번호 : 제 1234-서울 구로구-1004호 개인정보관리 책임자 : 홍길동  소비자피해보상보험<br>고객센터 : 1234-5678 FAX : 02-1234-5678 HNAGUKUNIVERSITY&#64;HANGUK.COM</p>
+               <p>COPYRIGHT &#169; HANGUK. ALL RIGHTS RESERVED.</p>
+           </div>
+       </div>
     </footer>
 </body>
 </html>
