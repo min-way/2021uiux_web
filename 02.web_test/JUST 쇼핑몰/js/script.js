@@ -8,7 +8,7 @@ $(document).ready(function(){
 //    nav end
     
 // main slide
-$(".slide_all>li").eq(0).siblings().css("top","-300px");
+$(".slide_all>li").eq(0).siblings().css({"top":"-300px"});
 
     var slideI=0;
 
@@ -30,12 +30,6 @@ $(".slide_all>li").eq(0).siblings().css("top","-300px");
         $(this).addClass("on");
         $(".contents > .notice_gal ul").removeClass("on");
         $(this).next("ul").addClass("on");
-        
-    
     });
-    
-    
 //tab menu end
-    
-    
 });
