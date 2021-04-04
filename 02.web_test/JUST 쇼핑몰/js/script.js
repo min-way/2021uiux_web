@@ -26,10 +26,24 @@ $(".slide_all>li").eq(0).siblings().css({"top":"-300px"});
 
 //tab menu
     $(".contents > .notice_gal h3").click(function(){
-        $(".contents > .notice_gal h3").removeClass("on");
+        $(".contents > .notice_gal h3, .contents > .notice_gal ul").removeClass("on");
         $(this).addClass("on");
-        $(".contents > .notice_gal ul").removeClass("on");
         $(this).next("ul").addClass("on");
     });
 //tab menu end
+    
+//레이어 팝업
+    $("ul.notice li").eq(0).click(function(){
+        $(".modal").fadeIn();
+    });
+        $(".modal button").click(function(){
+            $(".modal").fadeOut();
+        });
+    
+//레이어 팝업 끝
+    
+
+    
+    
+    
 });
