@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>for문</title>
+</head>
+<body>
+
+  <script>
+
+    //구구단 초기 단계
+    const dan = 3;
+    document.write(dan + " x 1 = " + dan * 1 + "<br>");
+    document.write(dan + " x 2 = " + dan * 2 + "<br>");
+    document.write(dan + " x 3 = " + dan * 3 + "<br>");
+    document.write(dan + " x 4 = " + dan * 4 + "<br>");
+    document.write(dan + " x 5 = " + dan * 5 + "<br>");
+    document.write(dan + " x 6 = " + dan * 6 + "<br>");
+    document.write(dan + " x 7 = " + dan * 7 + "<br>");
+    document.write(dan + " x 8 = " + dan * 8 + "<br>");
+    document.write(dan + " x 9 = " + dan * 9 + "<br>");
+
+  //구구단 for문 함수
+    const dan1 = 3;
+
+    for(let i=1;i<10;i++){
+      document.write(dan1 + " x " + i +" = " + dan1*i + "<br>");
+    }
+
+    //function 함수선언으로 구구단 함수
+    function gugudan(x){
+
+    for(let i=1;i<10;i++){
+        document.write(x + "x" + i +"=" + x*i + "<br>");
+      }
+
+    }
+    //gugudan(5); //함수호출
+  </script>
+<script>
+  let x=1;
+  let sum=0;
+
+  while(x<=100){
+    //document.write(x);
+
+    sum=sum+x;
+    //document.write(sum + " ");
+    x++;
+  }
+  console.log(sum);
+</script>
+
+
+
+</body>
+</html>

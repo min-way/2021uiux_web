@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/reset.css">
+  <title>sub menu</title>
+  <script src="../js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+  <style>
+    .sub_menu {display: none;}
+    .gnb {width: 1000px; margin: 0 auto; background: orange; position: relative;}
+    .gnb>ul>li {float: left; width: 20%;}
+    .gnb>ul>li>a {display: block; line-height: 40px; text-align: center;}
+    /* .gnb>ul>li:hover .sub_menu {display: block;} */
+    .sub_menu {position: absolute; background: skyblue; width: 100%; left: 0;}
+    .sub_menu>li{float: left;}
+    .sub_menu>li>a {display: block; line-height: 40px; text-align: center; padding: 0 20px;}
+
+  </style>
+  <script>
+    $(document).ready(function(){
+      $(".gnb>ul>li").hover(function(){
+        console.log($(this).index());
+        $(this).find(".sub_menu").fadeIn();
+      },function(){
+        $(this).find(".sub_menu").hide();
+      });
+    });
+  </script>
+  <nav class="gnb">
+    <ul class="clearfix">
+      <li><a href="#">MENU1</a>
+        <ul class="sub_menu clearfix" style="padding-left: 0;">
+          <li><a href="#">sub_menu1_1</a></li>
+          <li><a href="#">sub_menu1_2</a></li>
+          <li><a href="#">sub_menu1_3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">MENU2</a>
+        <ul class="sub_menu clearfix" style="padding-left: 100px;">
+          <li><a href="#">sub_menu2_1</a></li>
+          <li><a href="#">sub_menu2_2</a></li>
+          <li><a href="#">sub_menu2_3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">MENU3</a>
+        <ul class="sub_menu clearfix" style="padding-left: 320px;">
+          <li><a href="#">sub_menu3_1</a></li>
+          <li><a href="#">sub_menu3_2</a></li>
+          <li><a href="#">sub_menu3_3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">MENU4</a>
+        <ul class="sub_menu clearfix" style="padding-left: 520px;">
+          <li><a href="#">sub_menu4_1</a></li>
+          <li><a href="#">sub_menu4_2</a></li>
+          <li><a href="#">sub_menu4_3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">MENU5</a>
+        <ul class="sub_menu clearfix" style="padding-left: 550px;">
+          <li><a href="#">sub_menu5_1</a></li>
+          <li><a href="#">sub_menu5_2</a></li>
+          <li><a href="#">sub_menu5_3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>
