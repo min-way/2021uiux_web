@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css"/>
+		<script type="text/javascript" src="script/jquery-1.12.3.js"></script>
+		<script>
+			$(document).ready(function(){
+
+				/***2단 결합 메뉴***/
+				$("#com-menu").hover(function(){
+					$(".sub-01").stop().slideDown();
+				}, function(){
+					$(".sub-01").stop().slideUp();
+				});
+
+				/***2단 분리 메뉴***/
+				$("#div-menu").hover(function(){
+					$(".bottom-menu").stop().slideDown();
+				}, function(){
+					$(".bottom-menu").stop().slideUp();
+				});
+
+				/***수직 방향 메뉴***/
+				$(".vertical-menu>ul>li").hover(function(){
+					$(this).find(".sub-03").stop().slideDown();
+				}, function(){
+					$(this).find(".sub-03").stop().slideUp();
+				});
+
+				/***수직 방향 멀티 메뉴***/
+				$(".multi-menu>ul>li").hover(function(){
+					$(this).find(".sub-04").stop().slideDown();
+				}, function(){
+					$(this).find(".sub-04").stop().slideUp();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<a href="">LOGO<!--<img src="" alt=""/>--></a>
+			</div>
+
+			<!--2단 결합 메뉴-->
+
+
+			<nav id="com-menu">
+				<ul>
+					<li><a href="">menu-01</a>
+						<ul class="sub-01">
+							<li><a href="">sub-01</a></li>
+							<li><a href="">sub-01</a></li>
+						</ul>
+					</li>
+					<li><a href="">menu-02</a>
+						<ul class="sub-01">
+							<li><a href="">sub-02</a></li>
+							<li><a href="">sub-02</a></li>
+							<li><a href="">sub-02</a></li>
+							<li><a href="">sub-02</a></li>
+						</ul>
+					</li>
+					<li><a href="">menu-03</a>
+						<ul class="sub-01">
+							<li><a href="">sub-03</a></li>
+							<li><a href="">sub-03</a></li>
+							<li><a href="">sub-03</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section class="cont-box"></section>
+
+
+<div class="seperator"></div>
+
+
+		<header>
+			<div class="logo">
+				<a href="">LOGO<!--<img src="" alt=""/>--></a>
+			</div>
+
+			<!-- 2단 분리 메뉴-->
+			<nav id="div-menu"> 
+				<ul class="top-menu">
+					<li><a href="">menu-01</a></li>
+					<li><a href="">menu-02</a></li>
+					<li><a href="">menu-03</a></li>
+				</ul>
+				<div class="bottom-menu">
+					<div class="bottom-center">
+						<ul class="sub-02">
+							<li><a href="">sub-01</a></li>
+							<li><a href="">sub-01</a></li>
+						</ul>
+						<ul class="sub-02">
+							<li><a href="">sub-02</a></li>
+							<li><a href="">sub-02</a></li>
+							<li><a href="">sub-02</a></li>
+							<li><a href="">sub-02</a></li>
+						</ul>
+						<ul class="sub-02">
+							<li><a href="">sub-03</a></li>
+							<li><a href="">sub-03</a></li>
+							<li><a href="">sub-03</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section class="cont-box"></section>
+
+
+<div class="seperator"></div>
+
+
+		<header>
+			<div class="logo">
+				<a href="">LOGO<!--<img src="" alt=""/>--></a>
+			</div>
+		</header>
+
+		<!-- 수직 방향 메뉴-->
+		<section id="content">
+			<nav id="left-menu"> 
+				<div class="vertical-menu">
+					<ul>
+						<li><a href="">menu-01</a>
+							<ul class="sub-03">
+								<li><a href="">sub-01</a></li>
+								<li><a href="">sub-01</a></li>
+							</ul>
+						</li>
+						<li><a href="">menu-02</a>
+							<ul class="sub-03">
+								<li><a href="">sub-02</a></li>
+								<li><a href="">sub-02</a></li>
+								<li><a href="">sub-02</a></li>
+								<li><a href="">sub-02</a></li>
+							</ul>
+						</li>
+						<li><a href="">menu-03</a>
+							<ul class="sub-03">
+								<li><a href="">sub-03</a></li>
+								<li><a href="">sub-03</a></li>
+								<li><a href="">sub-03</a></li>
+								<li><a href=""></a></li> <!--두번째 메뉴가 길었으나 마지막 메뉴가 잛을 경우, 마우스의 범위를 초과하기 때문에 마우스 오버 영역을 벗어나게 되는 부분을 막고자 투명한공간을 만들어 놓음-->
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<article id="right-cont">
+			</article>
+		</section>
+
+
+
+<div class="seperator"></div>
+
+
+		<header>
+			<div class="logo">
+				<a href="">LOGO<!--<img src="" alt=""/>--></a>
+			</div>
+		</header>
+
+		<!-- 수직 방향 멀티 메뉴-->
+		<section id="content">
+			<nav id="left-menu">
+				<div class="multi-menu">
+					<ul>
+						<li><a href="">menu-01</a>
+							<ul class="sub-04">
+								<li><a href="">sub-01</a></li>
+								<li><a href="">sub-01</a></li>
+							</ul>
+						</li>
+						<li><a href="">menu-02</a>
+							<ul class="sub-04">
+								<li><a href="">sub-02</a></li>
+								<li><a href="">sub-02</a></li>
+								<li><a href="">sub-02</a></li>
+								<li><a href="">sub-02</a></li>
+							</ul>
+						</li>
+						<li><a href="">menu-03</a>
+							<ul class="sub-04">
+								<li><a href="">sub-03</a></li>
+								<li><a href="">sub-03</a></li>
+								<li><a href="">sub-03</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<article id="right-cont">
+			</article>
+		</section>
+
+
+	</body>
+</html>

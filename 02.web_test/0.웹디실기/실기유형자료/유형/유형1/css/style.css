@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+*{-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+body{margin:0; padding:0;}
+ul{margin:0; padding:0; list-style:none;}
+a{text-decoration:none; color:#fff;}
+
+
+.seperator{height:400px;}
+
+
+header{width:1100px; height:100px; background:#ccc; margin:0 auto; padding:0 20px; position:relative;}
+.logo{float:left; line-height:100px; color:#000; font-size:24px;}
+.cont-box{width:1100px; height:200px; background:#ffffaa; margin:0 auto}
+
+/***2단 결합 메뉴***/
+
+#com-menu{width:750px; height:100%; padding:25px 0; float:right;}
+#com-menu>ul{width:100%; height:100%;}
+#com-menu>ul>li{width:250px; height:100%;float:left;}
+#com-menu>ul>li>a{display:block; width:100%; height:100%; text-align:center; line-height:50px; background:#999; }
+#com-menu>ul>li>ul{width:100%; height:160px; background:#aaaaff; display:none;}
+#com-menu>ul>li>ul>li{display:block;}
+#com-menu>ul>li>ul>li>a{display:block; width:100%; height:40px; line-height:40px; text-align:center;}
+
+
+/***2단 분리 메뉴***/
+
+#div-menu{width:750px; height:100%; padding:50px 0 0; float:right; }
+#div-menu>ul{width:100%; height:100%;}
+#div-menu>ul>li{width:250px; height:100%;float:left;}
+#div-menu>ul>li>a{display:block; width:100%; height:100%; text-align:center; line-height:50px; background:#999;}
+#div-menu>.bottom-menu{position:absolute; width:1100px; height:160px; margin:0 auto; top:100px; left:0; background:#aaaaff; padding:0 20px; display:none;}
+#div-menu>.bottom-menu>.bottom-center{width:750px; height:100%; float:right;}
+#div-menu>.bottom-menu>.bottom-center>ul{width:250px; height:100%; float:left;}
+#div-menu>.bottom-menu>.bottom-center>ul>li{display:block;}
+#div-menu>.bottom-menu>.bottom-center>ul>li>a{display:block; width:100%; height:40px; line-height:40px; text-align:center;}
+
+
+/***수직 방향 메뉴***/
+
+#content{width:1100px; height:auto; margin:0 auto; font-size:0;}
+#left-menu{width:300px; height:auto; display:inline-block; vertical-align:top;}
+.vertical-menu{width:100%; height:auto;}
+.vertical-menu>ul{width:100%; height:auto;}
+.vertical-menu>ul>li{width:100%;}
+.vertical-menu>ul>li>a{width:100%; height:40px; display:block; background:#999; color:#fff; font-size:16px; line-height:40px; padding:0 20px;}
+.sub-03{width:100%; height:auto; _display:none;}
+.sub-03>li{width:100%; height:auto;}
+.sub-03>li>a{width:100%; height:40px; display:block; background:#aaaaff; color:#fff; font-size:14px; line-height:40px; padding:0 40px;}
+.vertical-menu>ul>li:nth-child(3)>.sub-03>li:nth-child(4)>a{background:transparent;} 
+/* :nth-child(n) 적용시 찾고자 하는 대상을 정확하게 찾아 적용해야 함*/
+#right-cont{width:800px; height:600px; display:inline-block; background:#ffffaa; }
+
+
+/***수직 방향 멀티 메뉴***/
+#content{width:1100px; height:auto; margin:0 auto; font-size:0;}
+#left-menu{width:300px; height:auto; display:inline-block; vertical-align:top;}
+.multi-menu{width:100%; height:auto;}
+.multi-menu>ul{width:100%; height:auto;}
+.multi-menu>ul>li{width:100%; height:auto; position:relative;}
+.multi-menu>ul>li>a{width:100%; height:40px; display:block; background:#999; color:#fff; font-size:16px; line-height:40px; padding:0 20px; display:inline-block; vertical-align:top;}
+.sub-04{width:100%; height:auto; display:inline-block; vertical-align:top; position:absolute; top:0; left:300px; display:none;} 
+/*우측으로 빼기 위해서는 메뉴로부터 position:absolute를 적용하여 완전 분리시킬 필요가 있음(top과 left 값 부여). 
+이를 위해 바로 상위인 <li>에 position:relative를 적용. */
+.sub-04>li{width:100%; height:auto;}
+.sub-04>li>a{width:100%; height:40px; display:block; background:#aaaaff; color:#fff; font-size:14px; line-height:40px; padding:0 40px;}
+#right-cont{width:800px; height:600px; display:inline-block; background:#ffffaa; }round:#ffffaa; }ht-cont{width:800px; height:600px; display:inline-block; background:#ffffaa; }round:#ffffaa; }
