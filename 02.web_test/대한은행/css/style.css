@@ -10,5 +10,12 @@ a {text-decoration: none; color: #000;}
 
 .Wrap {width: 1200px; background: #aaa; margin: 0 auto;}
 
-.header h1 {margin-top: 20px;}
-
+.header h1 {margin-top: 20px; width: 200px; height: 40px; float: left;}
+.gnb {float: right; width: 700px; margin-top: 20px; background: #bbb;}
+.gnb>li {float: left; width: 25%; }
+.gnb>li>a {display: block; line-height: 40px; text-align: center; font-size: 20px;}
+.gnb>li:hover>a {background: #ccc;}
+.sub_menu {display: none;}
+.sub_menu>li>a {display: block; line-height: 40px; text-align: center; font-size: 20px;}
+.sub_menu>li>a:hover {background: #ccc;}
+.slide {width: 1200px; }
