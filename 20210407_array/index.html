@@ -7,6 +7,23 @@
   <title>array</title>
 </head>
 <body>
+<script>
+  const city01 = ["서울","부산","대전"];
+  const city02 = ["대구","광주","인천"];
 
+// array.forEach(function(){});
+// function printArr(){}
+// array.forEach(printArr);
+
+function printArr(item,index){
+  document.write("배열인덱스"+ index + ", 데이터 " + item + "<br>");
+}
+city01.forEach(printArr)
+
+city02.forEach(function(a,b){
+  document.write("배열인덱스"+ b + ", 데이터 " + a + "<br>");
+});
+
+</script>
 </body>
 </html>
