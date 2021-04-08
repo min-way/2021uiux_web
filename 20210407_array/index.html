@@ -24,6 +24,71 @@ city02.forEach(function(a,b){
   document.write("배열인덱스"+ b + ", 데이터 " + a + "<br>");
 });
 
+
+
+var arr0=[10,20,30,40,50];
+var arr1=[11,21,31,41,51];
+var arr2=[12,22,32,42,52];
+var arr3=[13,23,33,43,53];
+var allArr=[arr0, arr1, arr2, arr3];
+var parArr=[arr1, arr3];
+
+function printAll(){
+  for(var x=0;x<allArr.length;x++){
+    for(var y=0;y<allArr[x].length;y++){
+      document.write(allArr[x][y] + " ");
+    }
+    document.write("<p>")
+  }
+}
+printAll();
+
+
+const data = [[10,20,30,40],[50,60,70,80]];
+const data2 = [
+  ["pc01.jpg","pc02.jpg"],
+  ["우주","지구"]
+];
+function imgView(){
+  for(let i=0;i<data2[0].length;i++){
+    document.write("<li>");
+    document.write("<img src='../images/" + data2[0][i] + "'>");
+    document.write("<p>" + data2[1][i] + "</p>");
+    document.write("</li>");
+  }
+}
+
+const data55 = [
+  ["img1.jpg","이미지1","1,000"],
+  ["img2.jpg","이미지2","2,000"],
+  ["img3.jpg","이미지3","3,000"],
+  ["img4.jpg","이미지4","4,000"],
+  ["img5.jpg","이미지5","5,000"]
+];
+
+function imgView1(){
+  for(let i = 0; i<data55.length; i++){
+    document.write("<img src='../images/" + data55[i][0] + "'>");
+    document.write("<p>" + data55[i][1] + "</p>");
+    document.write("<p>" + data55[i][2] + "원 </p>");
+  }
+}
+imgView1();
+
+
+
 </script>
+<style media="screen">
+  li {list-style: none}
+  * {margin: 0;padding: 0;}
+</style>
+<div>
+  <ul>
+    <script>
+      imgView();
+    </script>
+  </ul>
+</div>
+
 </body>
 </html>
