@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ani2</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        html,body{
+            height: 100%; 
+            }
+        body {background-color: skyblue; 
+            background-image: url(images/bg02.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+/*
+            플렉스로 중앙 정렬 하는 법
+            display: flex;
+            justify-content: center;
+            align-items: center;
+*/
+            
+/*            background: #000 url(images/bg02.jpg) no-repeat center cover;*/
+        }
+        
+        .Wrap {
+            position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        
+        .Wrap label {
+            display: block; width: 60px;
+            height: 20px;
+            background: url(images/searchtext.jpg)no-repeat;
+            text-indent: -9999px; position: absolute;
+            top: 16px;
+            left: 20px;
+            z-index: 1;
+        }
+        
+        .Wrap .inp-search {
+            width: 400px;
+            height: 50px;
+            border-radius: 25px;
+            text-indent: 90px;
+            border: 1px solid #aaa;
+            position: relative;
+        }
+        
+        .Wrap .btn-search {
+            width: 40px;
+            height: 40px;
+            text-indent: -9999px;
+            background: #fff url(images/search.jpg)no-repeat center;
+            border: 0;
+            border: 1px solid #aaa;
+            border-radius: 50%;
+            cursor: pointer;
+            position: absolute;
+            right: 6px;
+            top: 50%; transform: translateY(-50%);
+        }
+        input:focus {outline: none;}
+        
+        .Wrap .img01 {
+            position: absolute; right: -100px; top: -200px;
+            animation-name: bal01;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            
+        }
+        
+        @keyframes bal01 {
+            to{top: -250px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="Wrap">
+        <img src="images/content2.png" alt="" class="img01">
+        <form action="#">
+            <label for="search">search</label>
+            <input type="text" id="search" placeholder="검색어를 입력하세요." class="inp-search">
+            <input type="submit" value="button" class="btn-search">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>ani</title>
+    
+</head>
+<style>
+    * {margin: 0; padding: 0;}
+    .box {
+        width: 100px;
+        height: 100px;
+        background: #3CB371;
+        animation-name: ani;
+        animation-duration: 1s;
+        animation-fill-mode: forwards; /*끝나는 시점 유지*/
+/*        animation-fill-mode: backwards; 시작 시점 유지*/
+        animation-iteration-count: infinite; /*반복*/
+        animation-direction: alternate; /*되돌아가기*/
+    }
+    
+    @keyframes ani {
+        from{}
+        to{}
+    }
+    .boxWrap {
+        width: 600px;height: 600px;background: #aaa; position: relative;
+
+    }
+    
+    .boxWrap:hover .box01 {animation-name: box01;}
+    .boxWrap:hover .box02 {animation-name: box02;}
+    .boxWrap:hover .box03 {animation-name: box03;}
+    .boxWrap:hover .box04 {animation-name: box04;}
+        
+        @keyframes box01 {
+            from{width: 0;}
+            to{width: 600px;}
+        }
+
+        @keyframes box02 {
+            from {height: 0;}
+            to {height: 600px;}
+        }
+        @keyframes box03 {
+            form {width: 0;}
+            to {width: 600px;}
+        }
+        @keyframes box04 {
+            from {height: 0;}
+            to {height: 600px;}
+
+    
+    }
+    
+    .box01 {
+        width: 0px; height: 10px; background: #4c65ef;
+        
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;        
+    }
+    
+    .box02 {
+        width: 10px; height: 0px; background: #ff0ad9;
+        position: absolute; right: 0; top: 0;
+        
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+    
+    .box03 {
+        width: 0px; height: 10px; background: #db1919;
+        position: absolute; right: 0; bottom: 0;
+        
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+    .box04 {
+        width: 10px; height: 0; background: #000;
+        position: absolute; left: 0; bottom: 0;
+        
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+    
+    
+</style>
+<body>
+    <div class="box">
+    </div>
+    <div class="boxWrap">
+        <div class="box01"></div>
+        <div class="box02"></div>
+        <div class="box03"></div>
+        <div class="box04"></div>
+    </div>
+</body>
+</html>
