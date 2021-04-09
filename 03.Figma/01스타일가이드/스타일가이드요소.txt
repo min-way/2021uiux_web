@@ -1,0 +1,10 @@
+style guid
+01. color palette
+02. typography
+03. buttons
+04. icons
+05. sub image(5)
+
+site map -> style guid 
+-> gui design : pc, table, mobile 
+-> html markup

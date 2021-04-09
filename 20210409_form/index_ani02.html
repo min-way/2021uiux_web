@@ -8,7 +8,8 @@
         html,body{
             height: 100%; 
             }
-        body {background-color: skyblue; 
+        body {
+            background-color: skyblue; 
             background-image: url(images/bg02.jpg);
             background-repeat: no-repeat;
             background-position: center;
@@ -19,14 +20,14 @@
             justify-content: center;
             align-items: center;
 */
-            
-/*            background: #000 url(images/bg02.jpg) no-repeat center cover;*/
+            overflow: hidden;
         }
         
         .Wrap {
             position: absolute;
             left: 50%; top: 50%;
             transform: translate(-50%,-50%);
+            z-index: 1;
         }
         
         .Wrap label {
@@ -66,14 +67,33 @@
         .Wrap .img01 {
             position: absolute; right: -100px; top: -200px;
             animation-name: bal01;
-            animation-duration: 2s;
+            animation-duration: 4s;
             animation-direction: alternate;
             animation-iteration-count: infinite;
-            
+            animation-fill-mode: forwards;
+            transform: rotate(0deg);
+        }
+        
+        .img00 {
+            position: absolute; left: -200px; bottom: -100px;
+            animation-name: air;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
         }
         
         @keyframes bal01 {
-            to{top: -250px;}
+            
+            0%{transform: rotate(10deg);}
+            25%{}
+            50%{}
+            75%{}
+            100%{top: -700px; transform: rotate(-20deg);}
+            
+        }
+        
+        @keyframes air {
+            to{left: 100%; bottom: 100%;}
         }
     </style>
 </head>
@@ -86,5 +106,6 @@
             <input type="submit" value="button" class="btn-search">
         </form>
     </div>
+    <img src="images/reallyAir.png" alt="" class="img00">
 </body>
 </html>
