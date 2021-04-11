@@ -1,0 +1,39 @@
+@charset 'utf-8';
+
+* {margin: 0; padding: 0; color: #222328;}
+
+ul {list-style: none;}
+
+a {text-decoration: none;}
+
+clearfix:after {content: ''; display: block; clear: both;}
+
+.wrap {width: 1000px; margin: 0 auto;}
+
+header {float: left; height: 650px; width: 200px; background: #aaa;}
+ 
+header h1 {}
+.gnb {padding-left: 10px;}
+.gnb>li {position: relative;}
+.gnb>li>a {display: block; line-height: 40px; text-align: center; width: 180px;}
+.gnb>li:hover >a {background: #ddd;}
+.sub {display: none; position: absolute; right: -170px; z-index: 10; top: 0; background: #ddd;}
+.sub>li {}
+.sub>li>a {display: block; line-height: 40px; text-align: center; width: 180px; }
+.sub>li>a:hover {background: #eee;}
+
+.contents {float: left;width: 800px; height: 550px; background: #999; }
+.slide {float: left; width: 800px; height: 350px; position: relative;}
+.slide li {position: absolute; left: 0; top: 0;}
+
+.notice {float: left; height: 200px; width: 250px; position: relative;}
+.day {position: absolute; right: 0;}
+.gal {float: left;}
+.gal ul li {float: left;}
+
+footer {float: left; height: 100px; background: #bbb; width: 800px;}
+
+
+
+
+
