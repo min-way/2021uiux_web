@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WOW!!!</title>
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <script src="../js/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</head>
+<style>
+  html, body {height: 100%;}
+  .box {width: 200px; height: 200px; background: skyblue; position: absolute;}
+  /* body {display: flex; justify-content: center; align-items: center;} */
+  .container {width: 1000px; margin: 0 auto;}
+  .container li {float: left; width: calc((1000px - 50px) / 6); background: skyblue; height: 100px; display: flex; justify-content: center; align-items: center; border-radius: 10px;}
+  .container li + li {margin-left: 10px;}
+  .container li {}
+</style>
+<body>
+  <div class="box wow slideInLeft"></div>
+  <div style="height: 2000px;"></div>
+  <div class="container">
+    <ul>
+      <li class="wow bounceInLeft" data-wow-delay="0">test</li>
+      <li class="wow bounceInUp" data-wow-delay="0.2s">test</li>
+      <li class="wow bounceInDown" data-wow-delay="0.4s">test</li>
+      <li class="wow bounceInRight" data-wow-delay="0.6s">test</li>
+      <li class="wow bounceInLeft" data-wow-delay="0.8s">test</li>
+      <li class="wow bounceInLeft" data-wow-delay="1s">test</li>
+    </ul>
+  </div>
+  <div style="height: 2000px;"></div>
+  <div class="container">
+    <ul>
+      <li class="wow pulse" data-wow-iteration="infinite" data-wow-delay="0">test</li>
+      <li class="wow pulse" data-wow-iteration="infinite" data-wow-delay="0.2s">test</li>
+      <li class="wow pulse" data-wow-iteration="infinite" data-wow-delay="0.4s">test</li>
+      <li class="wow pulse" data-wow-iteration="infinite" data-wow-delay="0.6s">test</li>
+      <li class="wow pulse" data-wow-iteration="infinite" data-wow-delay="0.8s">test</li>
+      <li class="wow pulse" data-wow-iteration="infinite" data-wow-delay="1s">test</li>
+    </ul>
+  </div>
+  <div style="height: 2000px;"></div>
+</body>
+</html>

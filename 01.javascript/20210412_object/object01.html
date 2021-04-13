@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>object</title>
+</head>
+<body>
+  <p id="var1">정보</p>
+  <p id="var2">정보2</p>
+  <p id="var3" class="view1">정보3</p>
+  <p id="var4" class="view1">정보4</p>
+
+  <script>
+    console.log( document.getElementById("var1").innerHTML );
+    console.log(document.getElementsByTagName("p")[0].innerHTML);
+    console.log(document.getElementsByTagName("body")[0].innerHTML);
+
+    document.getElementById("var1").innerHTML = "변경";
+    document.getElementsByTagName("p")[1].innerHTML = "변경2";
+    document.getElementsByTagName("body")[0].style.backgroundColor = "skyblue";
+    document.getElementsByClassName("view1")[0].innerHTML = "변경3";
+    document.getElementsByClassName("view1")[1].innerHTML = "변경4";
+
+    document.querySelectorAll(".view1")[0].style.backgroundColor = "orange";
+    document.querySelectorAll(".view1")[1].style.backgroundColor = "orange";
+
+
+    console.log(view.length);
+
+    function view(){
+      const view = document.querySelectorAll(".view1");
+
+      for(let i=0;i<view.length;i++){
+        view[i].style.border = "3px solid #000";
+      }
+    }
+
+    function bg2(x){
+      const bodyView = document.getElementsByTagName("body");
+
+      bodyView[0].style.backgroundColor = x
+    }
+
+
+    function bg(x){
+
+      if(x==1){
+        document.querySelectorAll("body")[0].style.backgroundColor = "yellow";
+      }else{
+        document.getElementsByTagName("body")[0].style.backgroundColor = "orange";
+      }
+
+    }
+
+  </script>
+  <button onclick="view()">테두리 변경</button>
+  <button onclick="bg2('yellow')">노랑 변경</button>
+  <button onclick="bg(2)">오렌지 변경</button>
+
+
+</body>
+</html>
