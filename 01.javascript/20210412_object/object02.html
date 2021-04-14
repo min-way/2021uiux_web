@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="carName"></div>
+  <div id="myCar"></div>
+
+  <script type="text/javascript">
+    //let car = new Object(); //new Date(); new Array(); 객체 선언의 종류
+    let car = { //객체선언
+      name: "sonata",
+      color: "red",
+      "tire num": 4,
+      speed: 100,
+      start:() => { //애로우 함수
+        return this.speed + 100;
+      }
+      // start:function(){
+      //   return this.speed + 100;
+      // }
+    };
+    document.getElementById("carName").innerHTML = car.name;
+
+    let myCar = {};
+    myCar.name = "bolt";
+    myCar.color = "red";
+
+    // "key" in object;
+    //"name" in myCar;
+    //console.log("name" in myCar);
+
+    //for...in 반복문
+    //for(key in object){}
+
+    for(key in myCar){
+      console.log(key);
+      console.log(myCar[key]);
+    }
+
+
+    function carView(){
+      document.getElementById("myCar").innerHTML = myCar.name;
+    }
+
+    //생성자 함수
+
+    function Carblue(name,color){
+      this.name = name;
+      this.color = color;
+    }
+
+    let hancar = new Carblue("sonata","blue")
+    let yourcar = new Carblue("avante","red")
+
+
+
+  </script>
+
+  <button onclick="carView()">나의 자동차는</button>
+
+</body>
+</html>
