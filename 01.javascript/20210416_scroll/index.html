@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/reset.css">
+  <style>
+    body {
+      height: 4000px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background: skyblue;
+      position: absolute;
+    }
+
+    .view {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      padding: 20px;
+      background: #eee;
+    }
+
+    .box.box1 {
+      top: 700px;
+    }
+
+    .box.box2 {
+      top: 1400px;
+    }
+
+    .box.box3 {
+      top: 2000px;
+    }
+
+    .boxView {
+      background: orange;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="box box1">box1</div>
+  <div class="box box2">box2</div>
+  <div class="box box3">box3</div>
+  <div class="view">
+    <p>scroll : <span class="scrollView">0</span></p>
+  </div>
+  <script>
+    // const scrollY = document.querySelector(".scrollView");
+    // const boxPos = document.querySelectorAll(".box");
+    //
+    // window.addEventListener("scroll", function() {
+    //   console.log(window.pageYOffset);
+    //   const scrollYPosition = window.pageYOffset;
+    //   scrollY.innerHTML = scrollYPosition;
+    //
+    //   // if(700<=scrollYPosition){
+    //   //   boxPos[0].classList.add("boxView");
+    //   // }else{
+    //   //   boxPos[0].classList.remove("boxView");
+    //   // }
+    //
+    //   for (let i = 0; i < boxPos.length; i++) {
+    //     if (boxPos[i].offsetTop <= scrollYPosition + window.innerHeight / 2) {
+    //       boxPos[i].classList.add("boxView");
+    //     } else {
+    //       boxPos[i].classList.remove("boxView");
+    //     }
+    //   }
+    // });
+
+    const scrollY = document.querySelector(".scrollView");
+    const boxPos = document.querySelectorAll(".box");
+
+    window.addEventListener("scroll",function(){
+      const scrollYPos = window.pageYOffset;
+      scrollY.innerHTML = scrollYPos;
+
+      for(let i=0;i<boxPos.length;i++){
+        if(boxPos[0].offsetTop<=scrollY){
+          boxPos[i].classList.add("boxView");
+        }else{
+          boxPos[i].classList.remove("boxView");
+        }
+      }
+
+    });
+
+
+
+
+  </script>
+</body>
+
+</html>
