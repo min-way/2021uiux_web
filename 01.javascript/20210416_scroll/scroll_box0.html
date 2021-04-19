@@ -104,26 +104,24 @@
     function view(){
       const winHeight = window.innerHeight/2;
       winH.innerHTML = winHeight;
-    }
 
-    window.addEventListener("scroll",function(){
+      window.addEventListener("scroll",function(){
+        const scrollYPos = window.pageYOffset;
+        scrollY.innerHTML = scrollYPos;
 
-      const scrollYPos = window.pageYOffset;
-      scrollY.innerHTML = scrollYPos;
-
-      for(let i=0;boxPos.length;i++){
-        if(boxPos[i].offsetTop<scrollYPos + winHeight){
-          boxPos[i].classList.add("boxView");
-        }else{
-          boxPos[i].classList.remove("boxView");
+        for(let i=0;boxPos.length;i++){
+          if(boxPos[i].offsetTop<scrollYPos + winHeight){
+            boxPos[i].classList.add("boxView");
+          }else{
+            boxPos[i].classList.remove("boxView");
+          }
         }
-      }
 
-    });
-
-// window.addEventListener("resize",function(){});
-window.addEventListener("resize",view);
-
+      });
+    }
+  // window.addEventListener("resize",function(){});
+  window.addEventListener("resize",view);
+  view();
 
   </script>
 </body>

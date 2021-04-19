@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../../js/jquery-3.1.1.min.js" charset="utf-8"></script>
+</head>
+<script>
+  // jquery(document).ready(function(){});
+  $(document).ready(function(){
+    // document.getElementByClassName("btn")[0].addEventListener("click",function(){})
+    // $("button.btn").on("click",function(){});
+    $(".btn").click(function(){
+      // document.querySelector(".box").style.display = "block";
+      $(".box").fadeIn();
+    });
+    $(".btn").click(function(){
+      $(this).fadeOut();
+    });
+
+    $(".gnb li").click(function(){
+      console.log($(this).index());
+
+      $(".gnb li").css("background-color","white");
+      $(this).css("background-color","#aaa");
+      console.log($(this).css("background-color"));
+    });
+
+  });
+</script>
+<style>
+  .box {display: none;}
+</style>
+<body>
+  <button class="btn">click</button>
+  <div class="box">
+    hello
+  </div>
+  <ul class="gnb">
+    <li>menu1</li>
+    <li>menu2</li>
+    <li>menu3</li>
+    <li>menu4</li>
+    <li>menu5</li>
+  </ul>
+</body>
+</html>
