@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jquery1</title>
+  <script src="../../js/jquery-3.1.1.min.js" charset="utf-8"></script>
+  <script>
+    $(document).ready(function(){}); //ready func 하단에 사용하면 필요 없음
+
+  </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, accusantium.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, accusantium.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, accusantium.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, accusantium.</p>
+
+    <ul class="tab">
+      <li>menu1</li>
+      <li>menu2</li>
+      <li>menu3</li>
+      <li>menu4</li>
+      <li>menu5</li>
+    </ul>
+    <div class="boxWrap">
+      <div class="box1">1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, laboriosam!</div>
+      <div class="box2">2. Dolor recusandae reprehenderit necessitatibus officiis omnis. Doloribus, tenetur hic sint.</div>
+      <div class="box3">3. Cumque quidem laborum, modi suscipit obcaecati iusto. At, quia, dolorem.</div>
+      <div class="box4">4. Nam nobis odio inventore quia officiis, quae alias assumenda ipsam.</div>
+      <div class="box5">5. Blanditiis voluptatum facere, sunt quos necessitatibus explicabo repellendus placeat laborum?</div>
+    </div>
+
+    <script>
+      // document.addEventListener("click",function(){});
+      $(".boxWrap>div").hide();
+      $(".tab>li").click(function(){
+        // $(".tab>li").eq(0).css("background","pink");
+        $(".tab>li").css("background","white");
+        $(this).css("background","pink");
+        console.log($(this).index());
+
+        $(".boxWrap>div").hide().eq($(this).index()).show();
+
+      });
+
+      // $(".boxWrap>div").hide();
+      // $(".boxWrap>div").eq(0).show();
+      // $(".boxWrap>div").hide().eq(0).show();
+
+    </script>
+
+
+    <script>
+      // 자바는 for문와 queryselectorall을 이용해서 전체 색칠한다.
+      // $("p").css("background","#aaa");
+
+      $("p").eq(0).css("background","#aaa");
+      // document.getElementsByTagName("p")[0].style.background = "skyblue";
+    </script>
+</body>
+</html>
