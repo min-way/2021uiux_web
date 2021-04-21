@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>onClick</title>
 </head>
-<body onmousemove="where(event)">
+<body>
+  <!-- <body onmousemove="where(event)"> -->
   <script>
     function where(e){
       console.log("x값:" + e.clientX + ", y값:" + e.clientY);
@@ -50,8 +51,21 @@
     function out(obj){
       obj.style.border = "2px solid gray"
     }
+
+    let width=0;
     function wheel(e,obj){
-      console.log(e.wheelDelta);
+      // console.log(e.wheelDelta);
+
+      if(e.wheelDelta<0){
+        width--;
+        if(width<0){width=0;}
+      }else{
+        width++;
+      }
+      console.log(width);
+      obj.style.borderStyle = "solid";
+      obj.style.borderWidth = width + "px";
+      // obj.style.borderWidth = `${width} px`;
     }
   </script>
 </body>
