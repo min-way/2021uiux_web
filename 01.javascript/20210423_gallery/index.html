@@ -9,34 +9,61 @@
   <script src="../../js/jquery-3.1.1.min.js" charset="utf-8"></script>
   <script>
     $(document).ready(function(){
-      $(".container li").click(function(){
-        var tt = $(this).index();
-        console.log(tt);
-        $(".image p").eq(tt).show().siblings().hide();
-        // $(".image p").hide().eq(tt).show();
-      });
+      // $(".container li").click(function(){
+      //   var tt = $(this).index();
+      //   console.log(tt);
+      //   $(".image p").eq(tt).show().siblings().hide();
+      //   // $(".image p").hide().eq(tt).show();
+      // });
+      //
+      // let current = 0;
+      //
+      // $(".prev").click(function(){
+      //   current--;
+      //   if(current==-1){current=0;}
+      //   console.log(current);
+      //   imgMove();
+      // });
+      // $(".next").click(function(){
+      //   current++;
+      //   if(current==3){current=2;}
+      //   imgMove();
+      //   console.log(current);
+      // });
+      // console.log(current);
+      //
+      // function imgMove(){
+      //   let cNum = current * -1 * 760;
+      //   // $(".container>ul").css("left",cNum)
+      //   $(".container>ul").stop().animate({left:cNum},1000);
+      // }
 
-      let current = 0;
+    $(".container li").click(function(){
+      var tt = $(this).index();
+      $(".image p").hide().eq(tt).show();
+    });
 
-      $(".prev").click(function(){
-        current--;
-        if(current==-1){current=0;}
-        console.log(current);
-        imgMove();
-      });
-      $(".next").click(function(){
-        current++;
-        if(current==3){current=2;}
-        imgMove();
-        console.log(current);
-      });
-      console.log(current);
+    let i = 0;
 
-      function imgMove(){
-        let cNum = current * -1 * 760;
-        // $(".container>ul").css("left",cNum)
-        $(".container>ul").stop().animate({left:cNum},1000);
-      }
+    $(".prev").click(function(){
+      i--;
+      if(i<0){i=0}
+      console.log(i);
+      sliderMove();
+    });
+    $(".next").click(function(){
+      i++;
+      if(i>2){i=2}
+      console.log(i);
+      sliderMove();
+    });
+
+    function sliderMove(){
+      let sliderNum = i * 760 * -1
+      $(".container ul").stop().animate({left:sliderNum},1000);
+      console.log(sliderNum);
+    }
+
     });
   </script>
   <style>
