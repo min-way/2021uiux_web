@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="img">
+    <img src="../../images/img1.jpg" alt="">
+  </div>
+  <br>
+  <div id="play">재생</div>
+  <script>
+    const img = document.getElementsByClassName("img")[0];
+    const play = document.getElementById("play");
+    let num = 1;
+    let timeId = setInterval("imgRotate()",300);
+    let i = 0;
+
+    play.onclick = function(){
+      if(i==0){
+        clearTimeout(timeId);
+        i=1;
+        console.log(i);
+        return true
+      }else{
+        setInterval("imgRotate()",300);
+        console.log(i);
+        return false
+      }
+    }
+
+    function imgRotate(){
+      num++;
+      if(num==8){num=1}
+      // img.innerHTML = "<img src=" + "../../images/img" + num + ".jpg>";
+      img.innerHTML = `<img src="../../images/img${num}.jpg">`;
+    }
+
+  </script>
+</body>
+</html>
