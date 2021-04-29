@@ -17,23 +17,21 @@
     const play = document.getElementById("play");
     let num = 1;
     let timeId = setInterval("imgRotate()",300);
-    let i = 0;
-
-    play.onclick = function(){
-      if(i==0){
-        clearInterval(timeId);
-        i=1;
-        console.log(i);
-
-      }
-
-      if(i==1){
-        setInterval("imgRotate()",300);
-        i=0;
-        console.log(i);
-        
-      }
-    }
+    // let i = 0;
+    //
+    // play.onclick = function(){
+    //
+    //   if(i==0){
+    //     clearInterval(timeId);
+    //     i=1;
+    //     console.log(i);
+    //   }else{
+    //     setInterval("imgRotate()",300);
+    //     i=0;
+    //     console.log(i);
+    //   }
+    //
+    // }
 
     function imgRotate(){
       num++;

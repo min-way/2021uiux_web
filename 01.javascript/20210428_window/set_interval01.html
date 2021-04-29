@@ -8,11 +8,27 @@
 </head>
 <body>
   <p id="time"></p>
+  <button onclick="eTime()">Stop</button>
+  <button onclick="sTime()">Restart</button>
   <script>
     const time = document.getElementById("time");
-    let date = new Date();
+    // time.innerHTML = timeView;
+    let myTime = 0;
 
-    
+    function timer(){
+      let date = new Date();
+      let timeView = date.toL-ocaleTimeString();
+      time.innerHTML = timeView;
+    }
+    function sTime(){
+      myTime = setInterval("timer()",1000);
+    }
+    function eTime(){
+      clearInterval(myTime);
+    }
+
+    timer();
+    sTime();
   </script>
 </body>
 </html>
