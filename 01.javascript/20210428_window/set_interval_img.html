@@ -21,14 +21,17 @@
 
     play.onclick = function(){
       if(i==0){
-        clearTimeout(timeId);
+        clearInterval(timeId);
         i=1;
         console.log(i);
-        return true
-      }else{
+
+      }
+
+      if(i==1){
         setInterval("imgRotate()",300);
+        i=0;
         console.log(i);
-        return false
+        
       }
     }
 
