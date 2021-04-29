@@ -12,17 +12,38 @@
     position: fixed; width: 200px; height: 100px;
     top: 100px; right: 100px; background: skyblue; padding: 10px;}
 
-  .nav {}
-  .nav.fixed {position: fixed; width: 100%; top: 0;}
+  .nav {height: 150px; background: orange; transition: 1s;}
+  .nav.fixed {position: fixed; width: 100%; top: 0; height: 0;}
   .gnb {}
   .gnb li {float: left; padding: 10px; width: 20%; text-align: center; line-height: 40px; background: orange; cursor: pointer;}
   .gnb li:hover {background: purple;}
+
+  #car1 {position: absolute; left: 0; top: 1300px; transition: 0.5s; opacity: 0;}
+  #car1.move {left: 300px; opacity: 1;}
+  #car2 {position: absolute; right: 0; top: 1500px; transition: 0.5s; opacity: 0; transform: scaleX(-1);}
+  #car2.move {right: 300px; opacity: 1; transform: scaleX(-1);}
+
+  .top {
+    position: fixed; width: 100px; height: 100px; background: #000; color: #fff; bottom: 50px; right: 50px; border-radius: 50px;
+    display: flex; justify-content: center; align-items: center;
+    animation: viewTop 1s infinite alternate; transition: 0.3s; opacity: 0;
+    cursor: pointer;
+  }
+  .top.view {opacity: 1;}
+  @keyframes viewTop {
+    to{transform: translateY(-20px)}
+  }
   </style>
 
   <script>
     $(document).ready(function(){
       const menuPos = $(".nav").offset().top;
+      const car1Pos = $("#car1").offset().top;
+      const car2Pos = $("#car2").offset().top;
+      const topPos = $(".top").offset().top;
+
       $(".menuPos").html(menuPos + "px");
+      $(".car1Pos").html(car1Pos + "px");
 
       // $(window).on("scroll",function(){});
       $(window).scroll(function(){
@@ -36,7 +57,33 @@
           $(".nav").removeClass("fixed");
         }
 
-      });
+        if(car1Pos<scrollY+800){
+          $("#car1").addClass("move");
+        }else{
+          $("#car1").removeClass("move");
+        }
+
+        if(car2Pos<scrollY+700){
+          $("#car2").addClass("move");
+        }else{
+          $("#car2").removeClass("move");
+        }
+
+        if(topPos<scrollY + window.innerHeight/2){
+          $(".top").addClass("view");
+        }else{
+          $(".top").removeClass("view");
+        }
+      });//scroll script
+
+    const docTop = document.getElementsByClassName("top")[0];
+    docTop.onclick = function(){
+      window.scrollTo(0,0);
+    }
+    // $(".top").click(function(){
+    //   $("html,body").animate({scrollTop:0},500);
+    // });
+
     });
   </script>
 </head>
@@ -44,6 +91,7 @@
   <div class="box1">
     scroll location : <span class="scrollY">0</span><br>
     menu location : <span class="menuPos">0</span>
+    car1Pos : <span class="car1Pos">0</span>
   </div>
   <p>1</p>
   <p>2</p>
@@ -114,6 +162,8 @@
   <p>58</p>
   <p>59</p>
   <p>60</p>
+  <img src="../../images/car.png" id="car1" class="move" alt="">
+    <img src="../../images/car.png" id="car2" class="move" alt="">
   <p>61</p>
   <p>62</p>
   <p>63</p>
@@ -154,5 +204,6 @@
   <p>98</p>
   <p>99</p>
   <p>100</p>
+  <div class="top">TOP</div>
 </body>
 </html>

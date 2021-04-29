@@ -17,14 +17,17 @@
 
     function timer(){
       let date = new Date();
-      let timeView = date.toL-ocaleTimeString();
+      let timeView = date.toLocaleTimeString();
       time.innerHTML = timeView;
     }
     function sTime(){
-      myTime = setInterval("timer()",1000);
+      if(myTime==0){
+        myTime = setInterval("timer()",1000);
+      }
     }
     function eTime(){
       clearInterval(myTime);
+      myTime=0;
     }
 
     timer();

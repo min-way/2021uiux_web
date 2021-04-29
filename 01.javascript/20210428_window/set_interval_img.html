@@ -11,27 +11,11 @@
     <img src="../../images/img1.jpg" alt="">
   </div>
   <br>
-  <div id="play">재생</div>
   <script>
     const img = document.getElementsByClassName("img")[0];
     const play = document.getElementById("play");
     let num = 1;
     let timeId = setInterval("imgRotate()",300);
-    // let i = 0;
-    //
-    // play.onclick = function(){
-    //
-    //   if(i==0){
-    //     clearInterval(timeId);
-    //     i=1;
-    //     console.log(i);
-    //   }else{
-    //     setInterval("imgRotate()",300);
-    //     i=0;
-    //     console.log(i);
-    //   }
-    //
-    // }
 
     function imgRotate(){
       num++;
