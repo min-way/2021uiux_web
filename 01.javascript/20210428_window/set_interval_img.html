@@ -11,11 +11,23 @@
     <img src="../../images/img1.jpg" alt="">
   </div>
   <br>
+  <button onclick="dd()">멈춰!</button>
   <script>
     const img = document.getElementsByClassName("img")[0];
     const play = document.getElementById("play");
     let num = 1;
     let timeId = setInterval("imgRotate()",300);
+    let i = 0;
+
+    function dd(){
+      if(i == 0){
+        i = 1;
+        clearTimeout(timeId);
+      }else{
+        timeId = setInterval("imgRotate()",300);
+        i = 0;
+      }
+    }
 
     function imgRotate(){
       num++;
@@ -23,7 +35,7 @@
       // img.innerHTML = "<img src=" + "../../images/img" + num + ".jpg>";
       img.innerHTML = `<img src="../../images/img${num}.jpg">`;
     }
-
+  imgRotate();
   </script>
 </body>
 </html>
