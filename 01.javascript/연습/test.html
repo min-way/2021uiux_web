@@ -5,6 +5,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="Ss" class="Ss"></div>
     <script>
         var num = ["일","이","삼"];
         var sum = 0;
@@ -12,6 +13,10 @@
             return sum += v;
         });
         console.log(sum);
+
+        const Ss = document.getElementById("Ss");
+        Ss.style.width = "700px";
+        console.log(Ss);
     </script>
 </body>
 </html>
