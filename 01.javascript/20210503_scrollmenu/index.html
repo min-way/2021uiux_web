@@ -121,6 +121,12 @@
         }
       });
 
+      $(".scene").each(function(index){
+     //if(scrollY >= $(".scene").eq(index).offset().top){}
+       if(scrollY >= $(this).offset().top){
+         $(".menu>a").removeClass("active").eq(index).addClass("active");
+       }
+     });
 
   </script>
 
