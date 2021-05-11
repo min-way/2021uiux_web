@@ -9,9 +9,10 @@ C:\Users\hanyo\.atom\packages\emmet\node_modules\emmet\lib\snippets.json
 7. color-picker
 
 8. open-in-browser
-keymaps>open-in-browsers.cson
+settings>packages>setting>view code
 'atom-workspace':
   'f12': 'open-in-browsers:toggle'
+추가
 
 9.atom-live-server
 keymaps>atom-live-server.cson
