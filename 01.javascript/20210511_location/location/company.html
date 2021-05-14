@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Document</title>
+  <style>
+  *{margin: 0;padding: 0;box-sizing:border-box;}
+  li{list-style: none}
+  a:link,a:visited{color:#000;text-decoration:none}
+  .clearfix:after{content:"";clear: both;display: block;}
+
+
+  .listWrap{width: 900px;margin:auto;margin-bottom: 20px;}
+  .listWrap li{float: left;width:calc(100% / 5);line-height:40px;text-align: center;}
+  .listWrap li.active{background:skyblue;}
+
+  .conWrap{width: 900px;margin:auto}
+  </style>
+</head>
+<body>
+  <div class="listWrap">
+    <ul class="clearfix">
+      <li>MENU1</li>
+      <li>MENU2</li>
+      <li>MENU3</li>
+      <li>MENU4</li>
+      <li>MENU5</li>
+    </ul>
+  </div>
+  <div class="conWrap">
+    <div>1.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ipsum sint cum sed molestiae omnis ullam suscipit rem deleniti culpa quo at, debitis reiciendis officiis quis, laborum, deserunt minus maiores.</div>
+    <div>2. Cupiditate beatae veritatis, atque. Velit sunt, ut doloribus harum labore accusantium, odit beatae vel unde assumenda, cumque tempore ex deleniti possimus! Itaque, dolores, repudiandae. Voluptates doloribus, ab necessitatibus ipsam suscipit.</div>
+    <div>3. Consequuntur fuga quisquam provident aspernatur numquam quas cupiditate debitis eaque totam? Aut, repellendus possimus, sed architecto praesentium iusto impedit laborum, corrupti quasi eaque cumque et minima nam placeat quidem dolor.</div>
+    <div>4. Officia placeat, distinctio mollitia facere voluptates, harum autem natus provident. Inventore sint praesentium repellendus, minus mollitia tenetur, odit, non quis molestiae possimus aspernatur aliquam rem architecto, sapiente quam laudantium nesciunt.</div>
+    <div>5. Soluta placeat, similique dolore ipsa tenetur accusantium. Facilis fugit vitae odit numquam odio deserunt sunt veritatis cupiditate? Ipsam nemo autem consequatur asperiores ratione dignissimos, iure debitis neque. Numquam, nulla, similique.</div>
+  </div>
+
+
+<script>
+        let num = location.href.indexOf("=") + 1;  // 번호찾기
+        let string = location.href.substring(num);  //문자열자르
+        console.log(string);
+
+         if( location.href.indexOf("=") > 0 ){
+            view(string);
+         }else{
+            view(0)
+         }
+
+         function view(menu){
+               $(".listWrap li").removeClass("active").eq(menu).addClass("active");
+               $(".conWrap>div").hide().eq(menu).show();
+         }
+         $(".listWrap li").click(function(){
+            var menu = $(this).index();
+            view(menu);
+         });
+</script>
+</body>
+</html>

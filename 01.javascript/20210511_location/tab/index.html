@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Document</title>
+  <style>
+  *{margin: 0;padding: 0;box-sizing:border-box;}
+  li{list-style: none}
+  a:link,a:visited{color:#000;text-decoration:none}
+  .clearfix:after{content:"";clear: both;display: block;}
+
+  .listWrap .viewImg{float: left;}
+  .listWrap .viewImg div{display: none;}
+  .listWrap .viewImg div:nth-child(1){display:block;}
+
+  .listWrap .list{float: left;}
+  .listWrap .list a{display: block;}
+  .listWrap .list .vImg{display: none;}
+
+@media screen and (max-width:700px){
+  body{background:gray;}
+  .listWrap .viewImg{display: none;}
+}
+  </style>
+  <script>
+
+    $(document).ready(function(){
+
+      let winWidth = $(window).innerWidth();
+      allView();
+
+
+      $(window).resize(function(){
+        winWidth = $(window).innerWidth()
+        allView();
+      });
+
+      function allView(){
+        if(winWidth < 700){
+          mobileView("view");
+          pcView("off");
+        }else{
+          pcView("view");
+          mobileView("off");
+          $(".vImg").hide()
+        }
+      }
+
+
+      function mobileView(on){
+          if(on == "view"){
+            $(".list>li").on("click",function(){
+              console.log($(this).index());
+              $(".vImg").hide()
+              $(this).find("img").show();
+            })
+          }else{
+            $(".list>li").off("click");
+          }
+      }
+
+      function pcView(on){
+          if(on == "view"){
+            $(".list>li").on("mouseenter",function(){
+              let i = $(this).index();
+              $(".viewImg>div").hide().eq(i).show();
+            });
+          }else{
+            $(".list>li").off("mouseenter");
+          }
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="listWrap clearfix">
+    <div class="viewImg">
+      <div><img src="../../../images/img1.jpg" class="vImg_pc"></div>
+      <div><img src="../../../images/img2.jpg" class="vImg1_pc"></div>
+      <div><img src="../../../images/img3.jpg" class="vImg_pc"></div>
+      <div><img src="../../../images/img4.jpg" class="vImg_pc"></div>
+      <div><img src="../../../images/img5.jpg" class="vImg_pc"></div>
+    </div>
+    <ul class="list">
+      <li>
+        <a href="#">menu1</a>
+        <img src="../../../images/img1.jpg" class="vImg">
+      </li>
+      <li>
+        <a href="#">menu2</a>
+        <img src="../../../images/img2.jpg" class="vImg">
+      </li>
+      <li>
+        <a href="#">menu3</a>
+        <img src="../../../images/img3.jpg" class="vImg">
+      </li>
+      <li>
+        <a href="#">menu4</a>
+        <img src="../../../images/img4.jpg" class="vImg">
+      </li>
+      <li>
+        <a href="#">menu5</a>
+        <img src="../../../images/img5.jpg" class="vImg">
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
