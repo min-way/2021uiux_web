@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a:link, a:visited {color: #000; text-decoration: none;}
+li {list-style: none;}
+.clearfix:after {content: ''; display: block; clear: both;}
+
+/* header */
+header {display: flex; justify-content: center; height: 100px;}
+.container {display: flex; justify-content: space-between; width: 1000px;}
+.logo {display: flex; align-items: center;}
+.menu {display: flex; align-items: center;}
+.menu ul {display: flex;}
+.menu ul a {display: block; padding: 15px;}
+.menu ul a:hover {background: rgb(151, 101, 200); color: #fff;}
+.mobile_menu {display: none; width: 30px; height: 30px; cursor: pointer;}
+
+/* banner */
+#banner {display: flex; justify-content: center; background-image: url("../images/banner/tony-stark-poster.jpg"); background-position: center; background-size: cover; height: 600px;}
+.banner_txt {
+  display: flex; flex: 1;
+  flex-direction: column;
+  align-items: flex-end; justify-content: center; color: #fff;
+
+}
+.banner_txt h2 {font-size: 2.5rem; width: 400px; text-align: left;}
+.banner_txt p {font-size: 1.3rem; width: 400px; text-align: left;}
+
+.column {flex-direction: column;}
+.banner_option {display: flex; background: rgb(189, 29, 34); color: #fff;}
+.banner_option>div {flex:1; padding: 15px;}
+.banner_option>div>a {color: #fff; font-size: 0.8rem;}
+.banner_option>div>a:hover {border-bottom: 1px solid #fff;}
+.banner_option .banner_title {font-weight: bold; font-size: 1.2rem; margin-bottom: 12px;}
+
+#general {display: flex; justify-content: center;}
+#general section {flex:2; background: skyblue;}
+#general aside {flex:1; background: yellow;}
+
+
+@media screen and (max-width:700px){
+  header {height: 60px;}
+  .logo {padding-left: 16px;}
+  .logo img {width: 120px;}
+  .menu {padding-right: 16px;}
+  .menu ul {display: none;}
+  .banner_txt {align-items: center;}
+  .mobile_menu {display: flex; flex-direction: column; justify-content: space-around;}
+  .mobile_menu_line {height: 4px; background: #000; border-radius: 4px;}
+  .banner_option>div {padding: 20px; padding-bottom: 0;}
+  .banner_option>div:last-child {padding-bottom: 20px;}
+  .banner_option {flex-direction: column;}
+  .banner_option a {display: none;}
+
+  .m_column {flex-direction: column;}
+
+}
