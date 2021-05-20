@@ -1,0 +1,54 @@
+1. 전체페이지화면캡쳐
+https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl
+
+2. CSSViewer
+글꼴 및 텍스트, 색상 및 배경, 기타 CSS 속성을 보여주는 간단한 CSS 뷰어 확장 툴
+https://chrome.google.com/webstore/detail/cssviewer/ggfgijbpiheegefliciemofobhmofgce
+
+3. WhatFont
+웹 페이지에서 글꼴을 식별하는 가장 쉬운 방법과 이 확장 기능을 사용하면 웹 글꼴을 가리 키기만 하면 웹 글꼴을 검사할 수 있다.
+https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=ko
+
+4. Eye Dropper
+Eye Dropper를 사용하면 웹 페이지, 컬러픽커 및 개인 색상 기록에서 색상을 선택할 수 있다.
+https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka
+
+5. Spectrum
+스펙트럼은 웹 페이지에서 다양한 종류의 색맹 결함(Color Vision Deficiencies)을 즉시 테스트할 수 있다.
+https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb
+
+6. Site Palette
+무료 브라우저 확장 프로그램이다. 디자이너와 프론트엔드 개발자를 위한 필수 툴이며, 모든 웹 사이트의 색상표(color palettes)를 생성할 수 있다.
+https://chrome.google.com/webstore/detail/site-palette/pekhihjiehdafocefoimckjpbkegknoh
+
+7. Web Paint
+Web Paint는 모양, 선을 그려 라이브 웹 페이지에 텍스트를 추가하고 스크린샷을 찍을 수 있는 다음과 같은 사용하기 쉬운 그리기 도구를 제공한다.
+https://chrome.google.com/webstore/detail/web-paint/emeokgokialpjadjaoeiplmnkjoaegng
+
+8. Google Font Previewer
+몇 가지 텍스트 스타일 옵션을 사용하여 Google 글꼴 디렉터리에서 글꼴을 선택하고 현재 탭에서 미리 볼 수 있다.
+https://chrome.google.com/webstore/detail/google-font-previewer-for/engndlnldodigdjamndkplafgmkkencc
+
+
+10. Muzli 2
+웹에서 가장 신선한 디자인, UI, UX 및 대화식 뉴스(Interactive News) 및 사진을 제공한다. 필요한 모든 디자인 영감 얻을 수 있지 않을까~
+https://chrome.google.com/webstore/detail/muzli-2-stay-inspired/glcipcfhmopcgidicgdociohdoicpdfc
+
+11. 한국어 맞춤법 검사기
+한국어 맞춤법 검사기이다. 웹 브라우저상에서 검사를 원하는 부분을 드래그하여 선택 후 아이콘 또는 단축키를 누르면 검사 결과가 나온다.
+https://chrome.google.com/webstore/detail/google-font-previewer-for/engndlnldodigdjamndkplafgmkkencc
+
+12. Window Resizer
+다양한 화면 해상도를 에뮬레이트하기 위해 브라우저 창 크기를 조절할 수 있다.
+이 확장 프로그램은 다양한 해상도를 에뮬레이트하기 위해 브라우저 창 크기를 조정한다. 특히 웹 디자이너와 개발자가 다른 브라우저 해상도로 레이아웃을 테스트하도록 도와줌으로써 유용하다.
+https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh
+
+13. Design Grid Overlay
+이 확장 툴은 디자인 그리드 시스템에 대한 그리드 및 측정 오버레이를 표시한다. 다양한 디자인 시나리오에 맞게 구성할 수 있다.
+디자인 그리드를 사용하는 것은 시각 매체, 특히 웹 사이트 전반에 걸쳐 시각적인 조화와 리듬을 만드는 확실한 방법이다. 이 디자인 그리드 플러그인은 부트스트랩(Bootstrap), 스킨(Skin), 퓨어(Pure), 서시(Susy), 파운데이션(Foundation) 등 많은 인기 있는 그리드 시스템에서 작동하도록 구성할 수 있다.
+이 확장을 통해 열(columns), 거터(gutters) 및 너비(widths)의 그리드 사양을 입력한 다음 그리드 가이드 및 요소 측정값을 표시하여 페이지의 내용을 정렬할 수 있다.
+https://chrome.google.com/webstore/detail/design-grid-overlay/kmaadknbpdklpcommafmcboghdlopmbi
+
+14. Web Developer
+Web Developer Extension은 다양한 웹 개발자 도구를 사용하여 브라우저에 도구 모음 단추를 추가한다.
+https://chrome.google.com/webstore/detail/design-grid-overlay/kmaadknbpdklpcommafmcboghdlopmbi
