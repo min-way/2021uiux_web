@@ -11,9 +11,11 @@ C:\Users\hanyo\.atom\packages\emmet\node_modules\emmet\lib\snippets.json
 8. open-in-browser
 settings>packages>setting>view code
 'atom-workspace':
-  'f12': 'open-in-browsers:toggle'
-추가
+  'f12': 'open-in-browsers:toggle' 변경
 
 9.atom-live-server
 keymaps>atom-live-server.cson
 
+10.autocomplete-project-paths  // 자동경로 
+
+11. pigments // 색상출력
