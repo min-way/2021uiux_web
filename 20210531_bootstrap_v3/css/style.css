@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+:root {
+  --primary-color:#02b3e4;
+  --secondary-color:#ff5483;
+  --third-color:#a951ed;
+  --box-shadow:5px 5px 25px rgb(46,61,73);
+  --box-shadow-2st:10px 10px 20px rgba(46,61,73,0.3);
+  --font-1st:#333;
+  --font-2st:#7d97ad;
+}
+
+#headerWrap .bgcolor {
+  position: absolute;
+  top: -300px;
+  width: 100%;height: 600px;
+  background: linear-gradient(160deg,#02ccba,#aa72cd);
+  transform: skew(0deg,-15deg);
+}
+
+.video video {object-fit: fill; width: 100%; border-radius: 5px; box-shadow: var(--box-shadow);}
+.card-view li {border-radius: 5px; overflow: hidden; box-shadow: var(--box-shadow);}
+.slider .slider-title {font-size: 1.1rem; color: var(--font-2st);}
+.slider .row {position: relative;}
+
+.banner .row .mask {width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+
+.banner .row .card-img {overflow: hidden; position: relative;}
+.banner .row > div:nth-child(1) .mask, .banner .row > div:nth-child(4) .mask {background-color: rgba(2,179,228,0.5);}
+.banner .row > div:nth-child(2) .mask, .banner .row > div:nth-child(5) .mask {background-color: rgba(2,240,186,0.5);}
+.banner .row > div:nth-child(3) .mask, .banner .row > div:nth-child(6) .mask {background-color: rgba(169,81,237,0.5);}
+
+.banner .row .card {box-shadow: var(--box-shadow-2st); border: 0 none; border-radius: 5px; overflow: hidden;}
