@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>svg</title>
+  <style>
+    /* svg {
+      background: skyblue;
+      stroke: green;
+      stroke-width: 4;
+      fill: yellow;
+    } */
+    div {width: 200px; height: 200px;}
+    .box1 {background-image: url(star.svg);}
+    .box2 {
+      width: 400px;height: 400px;
+      display: flex; justify-content: center; align-items: center;
+      border: 1px solid #000;
+    }
+    .st0{
+      fill:#fff;stroke:#00f;
+      stroke-width:5;
+      stroke-dasharray:675;
+      stroke-dashoffset:675;
+      stroke-linecap:round;
+    }
+    .box2:hover .st0 {
+      animation: starAni 2s infinite;
+    }
+    @keyframes starAni {
+      0% {stroke-dashoffset:675;fill:#fff;}
+      50% {}
+      100% {stroke-dashoffset:0;fill:#f00;}
+    }
+
+  </style>
+</head>
+<body>
+  <!-- <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"> -->
+  <!-- <svg width="100" height="100">
+    <circle cx="50" cy="50" r="40">
+  </svg> -->
+  <div class="box">
+    <img src="star.svg" alt="">
+  </div>
+  <div class="box1"></div>
+  <div class="box2">
+    <svg width="200" height="200">
+
+      <polyline class="st0" points="110.2,34 124,76.2 191,76.2 136.8,115.6 157.5,179.4 103.2,140 49,179.4 69.7,115.6 15.5,76.2
+	82.5,76.2 103.2,12.5 110.2,34 "/>
+
+    </svg>
+  </div>
+</body>
+</html>
