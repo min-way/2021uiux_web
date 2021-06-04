@@ -1,0 +1,23 @@
+https://code.visualstudio.com/
+
+vcode extension
+1. Material Icon Theme
+2. Korean Language Pack for Visual Studio Code
+3. ESLint / TSLint
+4. Live Server
+5. Mithril Emmet
+6. Color Picker
+7. vetur
+8.ftp-simple
+9.gitlens
+
+mkdir vue
+터미널에서 git init 실행
+-------
+git status
+git add *
+git commit -m
+
+git remote add origin https://github.com/min-way/00html_test.git
+git branch -M main
+git push -u origin main
