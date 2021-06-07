@@ -1,0 +1,21 @@
+1. 폴더생성 -> git init (working directory)
+2. git add * (stage area) / git commit -m "작명" (localrepo)<컴퓨터
+3. git hub site -> repo 생성
+4. git config
+   git config -- global user.name "이름"
+   git config -- global user.email "이메일"
+
+5. git remote add origin 
+https://github.com/Kimjh1214/00html_test
+6. git branch -M main / git push -u origin main
+
+cd\
+dir/w
+
+새컴퓨터에 clone
+
+1. git clone https://github.com/min-way/2021uiux_web
+2. git config
+   git config --global user.name "이름"
+   git config --global user.email "이메일"
+3. code . -> vcode 실행
