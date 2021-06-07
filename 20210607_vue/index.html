@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <!-- <li v-for="item in 4">{{product[0]}}</li> -->
+            <li v-for="(item,index) in product" v-bind:class="myclass">
+                <!-- <a v-bind:href="link[index]">{{item}}</a> -->
+                <a v-bind:href="link[index]">{{product[index]}}</a>
+            </li>
+        </ul>
+        <ul>
+            <li v-for="(item,i) in product"><a v-bind:href="link[i]">{{item}}</a></li>
+        </ul>
+    </div>
+    <script>
+        // document.getElementById("app").innerHTML = "김민길";
+        new Vue({
+            el:'#app',
+            data:{
+                message:'김민길:',
+                product:['자전거','스쿠터','유아용','성인용'],
+                link:['#1','#2','#3','#4','#5','#6'],
+                myclass:'testhan'
+            }
+        })
+    </script>
+
+</body>
+</html>
