@@ -2,8 +2,12 @@
 2. git add * (stage area) / git commit -m "작명" (localrepo)<컴퓨터
 3. git hub site -> repo 생성
 4. git config
-   git config -- global user.name "이름"
-   git config -- global user.email "이메일"
+   git config --global user.name "이름"
+   git config --global user.email "이메일"
+   
+   git config 연결해제
+   git config --unset --global user.name
+   git config --unset --global user.email
 
 5. git remote add origin 
 https://github.com/Kimjh1214/00html_test
@@ -14,8 +18,16 @@ dir/w
 
 새컴퓨터에 clone
 
-1. git clone https://github.com/min-way/2021uiux_web
+
+1. git init (git 설치 후)
+
 2. git config
    git config --global user.name "이름"
    git config --global user.email "이메일"
-3. code . -> vcode 실행
+
+3. git remote add origin https://github.com/min-way/2021_etc.git
+   git branch -M main
+   git push -u origin main
+   차례로 실행
+
+4. code . -> vcode 실행
