@@ -1,0 +1,18 @@
+인라인 태그
+<a>, <span>,<img>,<button>
+
+<abbr>, <acronym>, <b>, <bdo>
+ <big>, <br/>, <cite>, <code>
+ <dfn>, <em>, <i>, <img>, <input>, <kbd>
+ <label>, <map>, <object>, <q>, <samp>, <small>,
+<script>, <select>,  <strong>, <sub>
+ <sup>, <textarea>, <tt>, <var>
+
+블럭 태그
+<div>, <p>
+<h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+<ul>,<ol>
+<header>, <section>, <table>
+<address>, <article>, <aside>, <audio>, <blockquote>, <canvas>
+<dd>, <dl>, <fieldset>, <figcaption>, <figure>, <footer>, <form>
+<hgroup>, <hr>, <noscript>, <output>, <pre>, <video>
