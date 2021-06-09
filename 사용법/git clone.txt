@@ -1,33 +1,51 @@
-1. 폴더생성 -> git init (working directory)
-2. git add * (stage area) / git commit -m "작명" (localrepo)<컴퓨터
-3. git hub site -> repo 생성
-4. git config
-   git config --global user.name "이름"
-   git config --global user.email "이메일"
+------------------------------------첫 연결시------------------------------------
+
+1. git 설치 (https://git-scm.com/)
+2. cmd 실행
+3. clone 연결할 해당 폴더로 이동 (cd\)
+
+명령어 실행
+4. git init
+5. git add * (stage area) / git commit -m "메시지"
+6. git config 연결 확인
+   git config --global user.name "이름" (min-way)
+   git config --global user.email "이메일" (nissyou@naver.com)
    
-   git config 연결해제
+   git config 연결 해제
    git config --unset --global user.name
    git config --unset --global user.email
 
-5. git remote add origin 
-https://github.com/Kimjh1214/00html_test
-6. git branch -M main / git push -u origin main
+7. 이름과 이메일을 연결 확인 후 git hub에 repositories의 command line 코드 3줄을 cmd에 명령어 실행
 
-cd\
-dir/w
+	git remote add origin https://github.com/min-way/2021_etc.git
+	git branch -M main
+	git push -u origin main
 
-새컴퓨터에 clone
+8. code . (vs code 실행)
 
 
-1. git init (git 설치 후)
+----------------------------------------새 컴퓨터에 clone------------------------------------
 
-2. git config
-   git config --global user.name "이름"
-   git config --global user.email "이메일"
+git 설치 (https://git-scm.com/)
 
-3. git remote add origin https://github.com/min-way/2021_etc.git
-   git branch -M main
-   git push -u origin main
-   차례로 실행
+1. git config 연결 확인
+   git config --global user.name "이름" (min-way)
+   git config --global user.email "이메일" (nissyou@naver.com)
+   
+   git config 연결 해제
+   git config --unset --global user.name
+   git config --unset --global user.email
 
-4. code . -> vcode 실행
+2. cmd 실행
+3. clone 연결할 해당 폴더로 이동 (cd\)
+4. git clone https://github.com/min-way/2021vue_project.git (repo 주소)
+5. code . (vs code 실행)
+
+
+----------------------------------------node_modules 폴더 설치방법 ------------------------------------
+
+새 컴퓨터 clone (node_modules 폴더 설치방법)
+
+2. cmd 실행
+3. clone 연결할 해당 폴더로 이동 (cd\)
+4. npm install
