@@ -18,6 +18,13 @@ code . (vs코드 실행)
 4. npm install
 
 ----------------------------------------
+로컬 8080 서버 실행
+
+cmd 실행 
+1. npm run serve
+2. local 주소 컨트롤 + 클릭
+
+----------------------------------------
 components
 1. *.vue (파일 생성)
 2. import 명작 from './components/파일.vue
