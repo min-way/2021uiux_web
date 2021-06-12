@@ -8,8 +8,8 @@ vcode extension
 5. Mithril Emmet
 6. Color Picker
 7. vetur
-8.ftp-simple
-9.gitlens
+8. ftp-simple
+9. gitlens
 
 mkdir vue
 터미널에서 git init 실행
