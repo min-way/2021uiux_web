@@ -1,0 +1,32 @@
+1. cmd 또는 터미널 실행
+
+2. npm install vue-router@4
+
+3. src에 router.js 새파일 생성
+
+4. router.js 입력
+
+import { createWebHistory, createRouter } from "vue-router";
+import home from './components/home.vue'
+
+const routes = [
+  {
+    path: "/",
+    component: home,
+  }
+];
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
+
+export default router;
+
+5. main.js 수정 및 추가 입력
+
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router.js'
+
+createApp(App).use(router).mount('#app')

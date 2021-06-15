@@ -1,0 +1,13 @@
+scss 사용법
+
+1. koala 다운로드 http://koala-app.com/
+
+2. scss 폴더 생성
+css/style.css
+scss/style.scss
+index.html 
+로 구성된다.
+
+3. 코알라 실행
+scss 의 폴더 수정을 css/style.css로 변경한다.
+ouput style을 expanded로 변경.
