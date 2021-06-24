@@ -1,0 +1,35 @@
+1.data.js => export default [{},{}]
+2. 제품리스트출력
+    v-for="(item,i) in product" :key="i"
+    {{product[i].title}}
+    <img :src="product[i].images">
+
+3. modal창디자인 => data(){ return{proView = false} }      
+    v-if="proView == true"
+
+4. 제품클릭시 모달창 열림
+   {{product[i].title}} => v-on:click="proView=true"
+   @click="proView=true"
+
+5. modal component제작
+   파일제작, import, 등록, 사용
+   props사용 => 데이타연결, 등록, 사용
+   $emit => @click="$emit('closeModal')" 
+	=> 부모컴포 @closeModal="proView=false"
+
+6. product component 제작
+      $emit => @click="$emit('openModal',product.id)" 
+	=> 부모컴포 @openModal="proView=true;proNum=$event"
+
+7.transition
+   <tansition   name="명작">modal</transition>
+   <style>
+	.명작-enter-from{}
+	.명작-enter-active{}
+	.명작-enter-to{}
+
+	.명작-leave-from{}
+	.명작-leave-active{}
+	.명작-leave-to{}
+   </style>
+

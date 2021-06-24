@@ -1,0 +1,23 @@
+netlify app 설치법
+
+1. cmd 실행
+2. cd \해당폴더로 이동
+3. vue add pwa 명령어 실행
+
+4. vue.config.js 생성
+module.exports = {
+    pwa: {
+      name: 'MyTodo',  // 나의 앱 이름
+      themeColor: '#000000', //상단바 컬러
+      msTileColor: '#000000', //상단바 컬러
+      workboxOptions: {
+        exclude: [/\.map$/, /manifest\.json$/, 'index.html']
+      }
+    }
+  }
+------------------------------
+5. npm run build 명령어 실행
+
+모바일 가이드 
+https://v3.vuejs.org/guide/mobile.html#introduction
+

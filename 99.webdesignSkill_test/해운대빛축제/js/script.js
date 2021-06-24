@@ -16,8 +16,7 @@ $(".contents .slide li").eq(0).siblings().hide();
             slideI=0;
         }
         
-        $(".contents .slide li").eq(slideI).siblings().fadeOut();
-        $(".contents .slide li").eq(slideI).fadeIn();
+        $(".contents .slide li").eq(slideI).fadeIn().siblings().fadeOut();
         
     },3000);
     
