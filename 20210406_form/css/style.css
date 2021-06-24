@@ -22,11 +22,11 @@ fieldset {border: 1px solid #dadada;background: #fff; margin-bottom: 20px;}
 .content fieldset .field .icon.pass1 {background-position: 0 -515px;}
 
 .content fieldset .field.btn-radio {height: 49px;}
+.content fieldset .field #male,.content fieldset .field #female {display: none;}
+
 .content fieldset .field .btn-label {display: block; width: 212px; height: 31px; background: #aaa; border: 1px solid #dcdcdc; text-align: center; line-height: 31px; cursor: pointer; position: absolute; top: 8px;}
 .content fieldset .field .btn-label.male {left: 15px;}
 .content fieldset .field .btn-label.female {right: 15px;}
-
-.content fieldset .field birth {}
 
 .content fieldset .field.birth label {display: block; width: 53px; height: 49px; float: left; text-align: center;line-height: 49px; border-right: 1px solid #eee;}
 .content fieldset .field.birth select {width: 110px; height: 20px; border: 0 none; font-size: 0.9rem; text-indent: 5px; float: left; margin-top: 10px; margin-left: 10px; margin-right: 7px;}
